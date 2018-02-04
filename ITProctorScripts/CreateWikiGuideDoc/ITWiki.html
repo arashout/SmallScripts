@@ -1,0 +1,3481 @@
+
+        <html>
+        <head></head><body>
+        <hr><div class="wiki_headingtitle">
+ <h3>
+  "Empty Document - Nothing Typed!"
+ </h3>
+</div>
+<div class="text_to_html">
+ <br/>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  "Empty Document - Nothing Typed!" Warning pop-up
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Securexam saves the response every minute and checks if the file contains data. If the Answer tab has been opened up and nothing has been typed into it for 15 minutes, Securexam will warn with a variation on the "no backups are being made" message:
+  <br/>
+  <br/>
+  Empty Document – Nothing Typed Warning! The system has detected that 15 saves and/or minutes have occurred without any text being typed. If there is text appearing on your screen in the document right now – STOP IMMEDIATELY and get a proctor before proceeding. If your document is blank and you have not typed any text yet and wish to continue, click on “Okay to continue”
+  <br/>
+  <br/>
+  <strong>
+   This message will also appear if typing has only occurred in the Spreadsheet tab
+  </strong>
+  since Securexam is looking for content in the Answer tab.
+  <br/>
+  <br/>
+  <strong>
+   To prevent this message from appearing, when you open an Answer tab, simply type the question number or just one character.
+  </strong>
+  <br/>
+  <br/>
+  If there is text in the Answer tab, DO NOT shut down the computer. Ask the candidate to handwrite (or use a backup laptop, see
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=173">
+   Using Backup Laptops
+  </a>
+  ), take the laptop with you, and call Kathleen Kort for instructions.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  "Unhandled exception" or "Attempted to perform and unauthorized operation" error messages
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  After double-clicking the Securexam Icon, the software does not launch and you receive one of the following error messages:
+  <br/>
+  <br/>
+  "Unhandled exception error"
+  <br/>
+  "Attempted to perform an unauthorized operation. The exam cannot proceed because security could not be enabled."
+  <br/>
+  <br/>
+  Follow these steps:
+  <br/>
+  <br/>
+  •    Right-click (
+  <strong>
+   Windows XP
+  </strong>
+  ) My Computer, (
+  <strong>
+   Windows Vista, 7, 8
+  </strong>
+  ) Computer, choose Manage.
+  <br/>
+  •    Expand Services and Applications, click WMI Control, right-click WMI Control, choose Properties.
+  <br/>
+  <br/>
+  If you see messages like failed to initialize or access denied, follow the steps below. Otherwise, if successfully connected, proceed to NEXT.
+  <br/>
+  <br/>
+  Fix for computers ON a domain
+  <br/>
+  •    Go to Control Panel.
+  <br/>
+  •    Double-click Administrative Tools.
+  <br/>
+  •    Double-click Computer Management.
+  <br/>
+  •    Select Local Users and Groups, then Groups.
+  <br/>
+  •    Double-click Administrators.
+  <br/>
+  •    Click Add Users.
+  <br/>
+  •    The local machine should be listed under Locations.
+  <br/>
+  •    Click the Advanced button.
+  <br/>
+  •    Click Find Now.
+  <br/>
+  •    Highlight local service and network service from RDN.
+  <br/>
+  •    Click the OK button three times to close out all the boxes.
+  <br/>
+  <br/>
+  Fix for computers NOT ON a domain
+  <br/>
+  •    Click the Windows Button (formerly called the Start button) on the lower left.
+  <br/>
+  •    Click All Programs, then Accessories.
+  <br/>
+  •    Right-click the command prompt and choose Run as Administrator option.
+  <br/>
+  •    Enter the following command lines:
+  <br/>
+  net localgroup "Administrators" "NT Authority\Local Service" /add
+  <br/>
+  net localgroup "administrators" "Service" /add
+  <br/>
+  <br/>
+  NEXT
+  <br/>
+  •    Click the Start Menu.
+  <br/>
+  •    In
+  <strong>
+   Windows XP
+  </strong>
+  , select the Run command.
+  <br/>
+  •    In
+  <strong>
+   Windows Vista, 7/8
+  </strong>
+  , type the command below into the Start search field.
+  <br/>
+  •    Type “services.msc”.
+  <br/>
+  •    Right-click Windows Management Instrumentation service, choose Stop.
+  <br/>
+  •    Navigate to C:\windows\system32\wbem\ and rename repository to repository_old.
+  <br/>
+  •    On the Services page, right-click the Windows Management Instrumentation service, choose Start.
+  <br/>
+  •    Follow the above steps to confirm that you can successfully connect to the WMI.
+  <br/>
+  •    Reboot the computer and launch the software again.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  64-bit warning message
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  The candidate receives the following message:
+  <br/>
+  <br/>
+  “We have determined that your system is a 64 bit OS; therefore your computer will log out out at the end of your exam. Before proceeding, close out all open applications”
+  <br/>
+  <br/>
+  This message is not an error message - it's a message to inform candidates that their laptop may restart. Make sure that they don't have any programs running before they launch Securexam (which they should always do anyway).
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  A circular error pop-up has appeared in the spreadsheet and there is no circular error.
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Click on OK on the pop-up. Copy the column where the circular error happens and paste the content in another column. The circular error will disappear.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  After exiting out of Securexam Windows Explorer  re-launches
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  This is normal for 64 bit OS.  Allow the laptop to reboot and everything should be back to normal.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Backup Laptop Usage
+ </h3>
+</div>
+<div class="text_to_html">
+ <div class="wiki-toc">
+  <p class="wiki-toc-title">
+   Table of contents
+  </p>
+  <p class="wiki-toc-section-2 wiki-toc-section">
+   1.1.
+   <a href="#toc-1">
+    Set Up Back-up laptop  for students
+   </a>
+  </p>
+  <p class="wiki-toc-section-2 wiki-toc-section">
+   1.2.
+   <a href="#toc-2">
+    <b>
+     File Management at END OF EXAM for backup laptops
+    </b>
+   </a>
+  </p>
+  <p class="wiki-toc-section-3 wiki-toc-section">
+   1.2.1.
+   <a href="#toc-3">
+    WARNING:
+   </a>
+  </p>
+ </div>
+ <h4>
+  <a name="toc-1">
+  </a>
+  Set Up Back-up laptop  for students
+ </h4>
+ <p>
+ </p>
+ <ol>
+  <li>
+   Log in to Securexam
+  </li>
+  <li>
+   Enter “demouser” as Username
+  </li>
+  <li>
+   Follow the Securexam instructions until you see the screen in step 4
+  </li>
+  <li>
+   Change the exam identification from demouser to the Securexam ID (7 digit number beginning with
+   <br/>
+   4):
+  </li>
+  <li>
+   Click OK. The header in word in Securexam should now accurately reflect the Securexam ID. If it
+   <br/>
+   does not (ie. the header shows demouser) see warning
+  </li>
+ </ol>
+ <h4>
+  <a name="toc-2">
+  </a>
+  <b>
+   File Management at END OF EXAM for backup laptops
+  </b>
+ </h4>
+ <ol>
+  <li>
+   <p style="margin:0px 0px 10px;color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">
+    Hold students with backup laptops until these steps are complete.
+   </p>
+  </li>
+  <li>
+   <p style="margin:0px 0px 10px;color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">
+    After each exam day,
+   </p>
+   <ol>
+    <li>
+     <p style="margin:0px 0px 10px;color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">
+      for each backup laptop used, the proctor should use the extraction tool (ExamRecovery) to zip up the exam files for that day on that machine, and email them to IT Proctor Manager.
+     </p>
+    </li>
+    <li>
+     <p style="margin:0px 0px 10px;color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">
+      Proctors should also zip up the 'My Exams' folder (documents/my exams) and email then to the IT Proctor Manager
+     </p>
+    </li>
+    <li>
+     <p style="margin:0px 0px 10px;color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">
+      (as of this date  (Sept 2016 Shannon for Pep and Chelsea for Prep courses)
+     </p>
+     <ol>
+      <li>
+       <p style="margin:0px 0px 10px;color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">
+        scuthbert@cpawsb.ca
+       </p>
+      </li>
+      <li>
+       <p style="margin:0px 0px 10px;color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">
+        CHassan@cpawsb.ca
+       </p>
+      </li>
+     </ol>
+    </li>
+   </ol>
+  </li>
+  <li>
+   <p style="margin:0px 0px 10px;color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">
+    Follow  Recovery Key Procedure  at end and make sure that they are with candidate exam
+   </p>
+  </li>
+ </ol>
+ <p>
+  <br/>
+ </p>
+ <h5>
+  <a name="toc-3">
+  </a>
+  WARNING:
+ </h5>
+ <p>
+  <span style="color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;float:none;">
+   If the demouser ID is accidentally used for the exam (not changed in Step 4 per the PDF) then the IT proctor manager needs to be alerted, and the proctor must be sure to update the file name using Workbench.
+  </span>
+  the IT proctor should follow the “How to rename a
+  <br/>
+  response file” instructions for workbench at the end of the examination. Students should NOT
+  <br/>
+  upload Securexam response files that are written under demouser, the renamed file from
+  <br/>
+  workbench is what should be submitted after the examination.
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <br/>
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Blank Desktop or caught in a loop of starting up and shutting down
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Note: you may need to log into the laptop in Safe Mode for the Shell item to be editable.
+  <br/>
+  <br/>
+  •    Press the CTRL+ALT+DELETE keys on the keyboard.
+  <br/>
+  •    Click the Task Manager button if the Task Manager is not the first window to appear.
+  <br/>
+  •    Select the New Task (Run…) command on the File menu.
+  <br/>
+  •    Type the word “regedit” and click OK.
+  <br/>
+  •    Click Continue if necessary.
+  <br/>
+  •    Open the HKEY_LOCAL_MACHINE folder.
+  <br/>
+  •    Open the Software folder.
+  <br/>
+  •    Open the Microsoft folder.
+  <br/>
+  •    Open the Windows NT folder.
+  <br/>
+  •    Open the Current Version folder.
+  <br/>
+  •    Click the WinLogon folder to select it.
+  <br/>
+  •    On the right side of the Registry Editor window, right-click the Shell item and select the Modify command.
+  <br/>
+  •    Change the Value data field to explorer.exe.
+  <br/>
+  •    Close the Registry Editor.
+  <br/>
+  •    Press the CTRL+ALT+DELETE keys on the keyboard.
+  <br/>
+  •    The first window that appears (either the Task Manager or the Security window, depending on the operating system) may have a button or menu item to restart the computer. If so, select it.
+  <br/>
+  •    If there is no option to restart the computer, display the Task Manager.
+  <br/>
+  •    Select the New Task (Run…) command on the File menu.
+  <br/>
+  •    Type the word “cmd” and click OK.
+  <br/>
+  •    In the Command Prompt window, type the command “shutdown –r” and press the Enter key.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Candidate forgot his electrical cord
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Candidate may use a backup computer (if available). Otherwise, the candidate must handwrite the exam – we do not support hardware failures at start up. We do not loan mice or power cords or permit sharing of power cords.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Candidate is being asked for a proctor password at entry
+ </h3>
+</div>
+<div class="text_to_html">
+ <div class="wiki-toc">
+  <p class="wiki-toc-title">
+   Table of contents
+  </p>
+  <p class="wiki-toc-section-2 wiki-toc-section">
+   1.1.
+   <a href="#toc-1">
+    exam is “in progress”.
+   </a>
+  </p>
+  <p class="wiki-toc-section-3 wiki-toc-section">
+   1.1.1.
+   <a href="#toc-2">
+    fix:
+   </a>
+  </p>
+  <p class="wiki-toc-section-2 wiki-toc-section">
+   1.2.
+   <a href="#toc-3">
+    exam not in progress but requires a proctor password
+   </a>
+  </p>
+ </div>
+ <p>
+ </p>
+ <h4>
+  <a name="toc-1">
+  </a>
+  exam is “in progress”.
+ </h4>
+ <h5>
+  <a name="toc-2">
+  </a>
+  fix:
+ </h5>
+ Try using ‘password’, 'cpa' or ‘test’ and finalize the exam if that does not work, exit out of Securexam(CPA). Navigate to the Documents-&gt;My Exams folder and rename the "Exams in Progress" folder to something else (e.g. "Exams in Progress OLD").
+ <p>
+  test passwords to finalize the exam
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   cpa
+  </li>
+  <li>
+   test
+  </li>
+  <li>
+   ?
+  </li>
+ </ul>
+ <h4>
+  <a name="toc-3">
+  </a>
+  exam not in progress but requires a proctor password
+ </h4>
+ <p>
+  this is usually caused by an improper exit from secure exam,
+ </p>
+ <p>
+  ie: attempted entry into but not starting an exam, usually blocked by the password
+ </p>
+ <p>
+  fix:
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   enter proctor password
+  </li>
+  <li>
+   indicate in notes that it was used to enter at start of exam.
+  </li>
+ </ul>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Candidate receives an input/output error message that indicates Securexam is not saving a backup file OR Securexam stops writing to a USB key in the middle of an exam
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Possible causes of this issue:
+  <br/>
+  <br/>
+  •    There might be a program that is trying to launch in the background that occasionally interferes with saving
+  <br/>
+  •    Loose USB key connection
+  <br/>
+  •    Bad USB key
+  <br/>
+  <br/>
+  Try the following steps:
+  <br/>
+  <br/>
+  •    Alt-Tab to see if there is a program trying to run and shut it down.
+  <br/>
+  •    Make sure the USB key is properly inserted into the port
+  <br/>
+  •    Change out the USB key.
+  <br/>
+  <br/>
+  If the exam was not being saved at all, the candidate would most likely be receiving these pop-ups once a minute. If this message is popping up with regularity, DO NOT shut down the computer.  Ask the candidate to handwrite (or use a backup laptop if available), take the laptop with you, and call
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=226">
+   Greg Jensen
+  </a>
+  for instructions.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Candidate's computer does not boot up
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Candidate may use a backup computer (if available). Otherwise, the candidate must handwrite the exam – we do not support hardware failures at start up. We do not loan mice or power cords or permit sharing of power cords.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Candidate's computer runs on battery only
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  •    Check that the power cord is plugged into the electrical outlet and the computer.
+  <br/>
+  •    Check that the electrical outlet has power or that the power bar is on.
+  <br/>
+  •    Move candidate to a powered outlet (if possible).
+  <br/>
+  •    If electricity cannot be restored, the candidate must handwrite the exam.
+  <br/>
+  •    Please advise the PO if a candidate cannot continue on their laptop and must handwrite or use their own backup. For the CFE, there will be at least one backup laptop. If a backup laptop is available, provide it to the candidate (see
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=173">
+   Using Backup Laptops
+  </a>
+  ).
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Code of Conduct
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  CPA expects IT Proctors to maintain a professional code of conduct that includes:
+  <br/>
+  <br/>
+  •    Arrive on time and ready to work.
+  <br/>
+  •    Treat your colleagues and candidates with respect.
+  <br/>
+  •    Do not wear earbuds or listen to music or watch movies while on IT proctor duty.
+  <br/>
+  •    Minimize time outside of the exam room - you need to be in the room in case of computer issue.
+  <br/>
+  •    Have your cell phone powered on in case we need to contact you.
+  <br/>
+  •    Complete your tasks in a timely fashion and ask for help if you are running behind schedule.
+  <br/>
+  •    For lunch, bring something that is unlikely to cause offense - try to avoid items that are smelly or noisy.
+  <br/>
+  •    Don't wear perfume or cologne.
+  <br/>
+  <br/>
+  Feel free to wear casual clothes.  Jeans and a T-shirt are just fine.  Flip-flops can be noisy, so sneakers are a better choice.
+  <br/>
+  <br/>
+  Some of these items may seem overly persnickety, but candidates are sensitive to distractions so we want to be mindful of them.
+ </p>
+ <p>
+  ---
+ </p>
+ <p>
+  (SC - 7/8/2016)
+  <br/>
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Completing the Incident Report
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  If you are required to take action on a candidate's laptop to address a technical issue, you must fill out an incident report to log the incident.
+ </p>
+ <p>
+  You can find a link to the SurveyMonkey-based incident report on the front page of this site:
+ </p>
+ <p>
+  <img alt="incident report link" class="img-responsive" height="74" src="http://moodle.casb.com/pluginfile.php/9655/mod_wiki/attachments/9/ir.jpg" style="vertical-align:text-bottom;margin:0 .5em;" width="344"/>
+  <br/>
+ </p>
+ <p>
+ </p>
+ <p>
+  It is very important that you provide as much detail as possible in your incident reports.  If a candidate decides to appeal their exam result based on their technical issues, we will be referring back to your notes to get a sense of the timeline and nature of the occurrence.
+ </p>
+ <p>
+  ---
+  <br/>
+ </p>
+ <p>
+  (SC - 7/8/2016)
+  <br/>
+ </p>
+ <br/>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Computer crashes during the exam and cannot be successfully restarted
+ </h3>
+</div>
+<div class="text_to_html">
+ <div class="box generalbox">
+  <div class="no-overflow">
+   <div class="text_to_html">
+    <p>
+     You will need to recover the candidate’s response from the USB key in the Exams_IP directory.
+    </p>
+    <p>
+     Print the candidate’s response using the Workbench.
+    </p>
+    <p>
+     Retain a copy of the encrypted files in the Exams_IP directory and forward to CPA Canada support team. Contents of this file may need to be merged or combined with other content for marking purposes.
+    </p>
+    <p>
+     The candidate may use a backup computer (if available) or must handwrite the remainder of his/her response.
+    </p>
+   </div>
+  </div>
+ </div>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Computer lags during the exam – Securexam slow to respond
+ </h3>
+</div>
+<div class="text_to_html">
+ <div class="box generalbox">
+  <div class="no-overflow">
+   <div class="text_to_html">
+    <p>
+     There are a number of possible causes for this issue.
+    </p>
+    <p>
+     1.    Open up the Task Manager and check for any unusual programs or processes (e.g. Skype).
+     <br/>
+     2.    Check to make sure that there are no automatic updates running, Windows or antivirus updates for example.
+     <br/>
+     3.    Exit Securexam normally with the exit password. Disable the programs that are slowing down Securexam. (you will need to use your proctor password to log back into the finalized exam).
+    </p>
+   </div>
+  </div>
+ </div>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Eric Olsen
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Contact Details
+  <br/>
+  <br/>
+  P: 1-866-420-2350
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Error message "Failed to turn security on"
+ </h3>
+</div>
+<div class="text_to_html">
+ <div class="box generalbox">
+  <div class="no-overflow">
+   <div class="text_to_html">
+    <p class="Default">
+     Disable the hardware or software that is displayed in the dialog box.
+    </p>
+    <p class="Default">
+     Disable firewall and remind candidate to re-enable firewall before turning his/her wireless back on after the exam.
+    </p>
+   </div>
+  </div>
+ </div>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Error message "No License" or Candidate cannot remember his/her username (email address) to log in
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Verify that the candidate is entering the correct username by opening the candidate’s license file in Notepad and inspecting the "UserName" and "Pw" entries. The license file can be located in the following locations:
+  <br/>
+  <br/>
+  <strong>
+   XP:
+  </strong>
+  <br/>
+  C:\Documents and Settings\All Users\Application Data\SoftwareSecure\*.lic
+  <br/>
+  <br/>
+  <strong>
+   Vista, Windows 7/8:
+  </strong>
+  <br/>
+  C:\ProgramData\SoftwareSecure\*.lic
+  <br/>
+  <br/>
+  The entries in the license file will look like this:
+  <br/>
+  <br/>
+  &lt;Value key="UserName" value="email address" /&gt;
+  <br/>
+  &lt;Value key="Pw" value="password" /&gt;
+  <br/>
+  <br/>
+  After ensuring the candidate entered the username and password correctly, check that he/she has properly registered on the
+  <a href="http://cpa-canada.softwaresecure.com">
+   http://cpa-canada.softwaresecure.com
+  </a>
+  website. The candidate must be registered as a CPA student to get access to the exam file.
+  <br/>
+  <br/>
+  If this is not the issue, connect the candidate’s laptop to the Internet, launch Securexam and click Get Exams and Licenses to update their license. If this fails to retrieve the Exams and Licenses, please try these steps:
+  <br/>
+  <br/>
+  •    Exit Securexam and go to "My Documents"
+  <br/>
+  •    Rename the "My Exams" folder to "My Exams OLD"
+  <br/>
+  •    Click on the Start icon
+  <br/>
+  •    Choose Programs
+  <br/>
+  •    Choose Software Secure Inc
+  <br/>
+  •    Click Exams and Licenses
+  <br/>
+  •    Enter in the candidate’s email and password to retrieve new licenses and exams.
+  <br/>
+  <br/>
+  If a candidate is unable to download the exam licenses, the candidate must handwrite their responses or use a backup laptop (see:
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=173">
+   Using Backup Laptops
+  </a>
+  ). Please advise the PO if a candidate cannot continue on their laptop. Record the details in your online incident report (see:
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=178">
+   Completing the Incident Report
+  </a>
+  ).
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Error message "Service Status: Stopped" or candidate is being prompted for an "Administrative Password"
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  •    Click the Start Menu.
+  <br/>
+  •    On XP, select the “Run” command. On Vista/Windows 7/8, type into the “Start Search” field.
+  <br/>
+  •    Type the command “Services.msc” and press the Enter key.
+  <br/>
+  •    Click “Continue” if necessary.
+  <br/>
+  •    Right-click the “SSIRuntimeService” entry.
+  <br/>
+  •    Select the “Properties” command.
+  <br/>
+  •    Change “Startup type” to “Automatic” if it is not already set.
+  <br/>
+  •    Click the “Apply” button.
+  <br/>
+  •    Click the “Start” button if it is enabled.
+  <br/>
+  •    Click OK.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Error message "User identification does not meet validation criteria and/or entries do not match. Unable to continue"
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  If a candidate encounters this error on the User Identification screen, please ensure that the information entered is correct: for CPA evaluations candidates will be entering their 7 digit CPA ID number only, for example: 4123456 (all CPA IDs start with "4").
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Error message "Web Update Wizard Named Pipe Exception..."
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  A series of error messages (see screenshots) appears on start up.
+ </p>
+ <p>
+  <img alt="Pipe Exception 1" height="366" src="http://moodle.casb.com/pluginfile.php/9655/mod_wiki/attachments/9/wizard_error_1.png" width="499"/>
+ </p>
+ <p>
+  <img alt="Pipe Exception 2" height="292" src="http://moodle.casb.com/pluginfile.php/9655/mod_wiki/attachments/9/wizard_error_2.png" width="455"/>
+ </p>
+ <p>
+  <img alt="Pipe Exception 3" height="316" src="http://moodle.casb.com/pluginfile.php/9655/mod_wiki/attachments/9/wizard_error_3.png" width="441"/>
+ </p>
+ <p>
+  This issue may be fixed by connecting the laptop to the internet and launching Securexam - this allows the program to check for updates and then shut down access to the wireless adapter.  Once Securexam has updated (or just checked for updates) it's a good idea to exit Securexam and disable the wireless adapter.
+ </p>
+ <p>
+  Note: students can prevent this error from occurring by checking for updates the day prior to the evaluation.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Evaluation Sign-in Process
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Candidates will arrive up to an hour before the exam begins.  Normally, this means they'll start arriving at 8am.
+  <br/>
+  <br/>
+  Exam invigilation staff will sign them in and give them an exam package, which includes a USB key.
+  <br/>
+  <br/>
+  Ask candidates to check to make sure that they are getting AC power to their laptop (i.e. it is not running on battery). Most laptop power supplies will have an indicator light which should be illuminated.  Ask candidates to wait and follow along with the Presiding Officer (PO) to sign into Securexam(CPA).
+  <br/>
+  <br/>
+  <strong>
+   Note: laptops are mandatory for all evaluations.
+  </strong>
+ </p>
+ <p>
+  Candidates that arrive at the evaluation without a laptop should be referred to the PO.  They may not be permitted to write the exam.
+  <br/>
+ </p>
+ <p>
+  ---
+  <br/>
+ </p>
+ <p>
+  (SC - 7/8/2016)
+  <br/>
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  ExamRecovery tool
+ </h3>
+</div>
+<div class="text_to_html">
+ The ExamRecovery tool automates the collection of all Securexam files for a particular exam on a candidate's machine (including secondary backup files).
+ <br/>
+ <br/>
+ ExamRecovery is included with the regular Securexam installation:
+ <br/>
+ <br/>
+ <img alt="menu" class="img-responsive" height="157" src="http://moodle.casb.com/pluginfile.php/9655/mod_wiki/attachments/9/er.png" style="vertical-align:text-bottom;margin:0 .5em;" width="159"/>
+ <br/>
+ <br/>
+ When you run 'ExamRecovery' from the Software Secure Inc. menu, it brings up a dialogue to select the Candidate ID and Exam:
+ <br/>
+ <br/>
+ <img alt="screenshot" class="img-responsive" height="540" src="http://moodle.casb.com/pluginfile.php/9655/mod_wiki/attachments/9/er1.png" style="vertical-align:text-bottom;margin:0 .5em;" width="899"/>
+ <br/>
+ <br/>
+ When you click the button, it compresses everything for that candidate/exam on the computer into a single zip file on the desktop. You can then just copy that file to a USB, Dropbox, or usually even just e-mail it. It contains the exam response, secondary backups, log files, and anything else generated by SE for that exam/candidate.
+ <br/>
+ <br/>
+ If you are every dealing with a candidate that has had major issues during the exam, or there may be some concern regarding data loss, please ensure that you run this application at the end of the exam and provide the resulting zip to Shannon or Chelsea.
+ <br/>
+ <br/>
+ -------------
+ <br/>
+ SC (8/8/2016)
+ <br/>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  File Paths
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  If the candidate has passed his/her Securexam(CPA) qualification exam, then chances are good that he/she will not experience difficulties during the exam. However, the Securexam(CPA) qualification exam is not a 100% indicator of a laptop's health, so problems can still occur.
+  <br/>
+  <br/>
+  <span style="text-decoration:underline;">
+   File Handling
+  </span>
+  <br/>
+  <br/>
+  Securexam(CPA), when operating properly, will save the candidate's files to the USB key every minute.
+  <br/>
+  <br/>
+  If the candidate's computer suffers an unrecoverable hardware error, the files will be retrievable from the USB key.
+  <br/>
+  <br/>
+  If Securexam(CPA) is having issues with the USB key (i.e. cannot find it, or cannot write to it), Securexam(CPA) will deposit the encrypted file on the candidate's Desktop. The name of the file will look similar to this:
+  <br/>
+  <br/>
+  <i>
+   CPA_Oct26Exam_4012345_20131026_1537.ssi-response
+  </i>
+  <br/>
+  <br/>
+  If you cannot find the ssi-response file on the USB key, then it should be on the Desktop. If you cannot find it on the Desktop, check that the folder and search options view is set to show hidden files and folders. If you still cannot find them on the Desktop you will be able to find them archived.
+  <br/>
+ </p>
+ <u>
+  Secondary Back-up Files
+ </u>
+ <br/>
+ <br/>
+ Securexam saves once a minute to the following folder:
+ <br/>
+ <br/>
+ <i>
+  C:\Users\(Your User Profile name)\AppData\Local\SSI\(your candidate ID)\(Exam name)
+ </i>
+ <br/>
+ <br/>
+ Some of the folders in the destination above may be hidden.  To view, you must display hidden files and folders by editing folder options.
+ <br/>
+ <br/>
+ There should be one subfolder for the Word portion and one subfolder for the Excel portion in the (Exam name) folder. Inside these folders are Securexam's automatic backup saves (saved once per minute). If you sort this folder by "Date Modified" you should see the most recently saved backup exam file for each subfolder, which should also correspond to the largest file size in the folder. If you see that the most recent file is *not* the largest file, it may be that the full exam was contained in one of the larger files saved a minute or two before the end of the exam.
+ <br/>
+ <br/>
+ These secondary backups can be decrypted using Workbench to yield the candidate's response files.
+ <br/>
+ ---
+ <br/>
+ (SC - 7/8/2016)
+ <br/>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  File Paths: Where to find primary, secondary and archive files
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  If the candidate has passed his/her Securexam(CPA) qualification exam, then chances are good that he/she will not experience difficulties during the exam. However, the Securexam(CPA) qualification exam is not a 100% indicator of a laptop's health, so problems can still occur.
+  <br/>
+  <br/>
+  <span style="text-decoration:underline;">
+   File Handling
+  </span>
+  <br/>
+  <br/>
+  Securexam(CPA), when operating properly, will save the candidate's files to the USB key every minute.
+  <br/>
+  <br/>
+  If the candidate's computer suffers an unrecoverable hardware error, the files will be retrievable from the USB key.
+  <br/>
+  <br/>
+  If Securexam(CPA) is having issues with the USB key (i.e. cannot find it, or cannot write to it), Securexam(CPA) will deposit the encrypted file on the candidate's Desktop. The name of the file will look similar to this:
+  <br/>
+  <br/>
+  <strong>
+   CPA_Oct26Exam_4012345_20131026_1537.ssi-response
+  </strong>
+  <br/>
+  <br/>
+  If you cannot find the ssi-response file on the USB key, then it should be on the Desktop. If you cannot find it on the Desktop, check that the folder and search options view is set to show hidden files and folders. If you still cannot find them on the Desktop you will be able to find them archived. Check these locations in the following order. If you cannot find them in the “\email address\” folder, or if the date/timestamp isn’t correct, then use the files in the “\user name\” folder:
+  <br/>
+  <br/>
+  <strong>
+   Windows XP:
+  </strong>
+  <br/>
+  [C:\] Documents and Settings \ user name \ My Documents \ My Exams \ email address \
+  <br/>
+  <br/>
+  <strong>
+   Windows Vista, Windows 7/8:
+  </strong>
+  <br/>
+  [C:\] Users \ user name \ Documents \ My Exams \ email address \
+  <br/>
+  <br/>
+  There is a hidden folder named “archive” under the email address folder. To view it, you must display hidden files and folders by editing folder options.
+  <br/>
+  <br/>
+  Files are also archived to this location (non OS specific):
+  <br/>
+  C: \ windows \ system32 \ SSI \ user name
+  <br/>
+  <br/>
+  The name of the file to be recovered will be:
+  <br/>
+  Question name_user name_exam date_time.ssi-zarchive
+  <br/>
+  <br/>
+  <br/>
+  If an archive was not made (because of laptop failure, for example), secondary backups are stored in:
+  <br/>
+  <br/>
+  <strong>
+   Windows XP:
+  </strong>
+  <br/>
+  [Drive:\] Documents and Settings\{User Profile Name}\Local Settings\Application Data\SSI\{UserName}\{ExamName_Date}
+  <br/>
+  <br/>
+  <strong>
+   Windows Vista or Windows 7/8:
+  </strong>
+  <br/>
+  [Drive:\] Users\{User Profile Name}\AppData\Local\SSI\{UserName}\{ExamName_Date}
+  <br/>
+  <br/>
+  These files may be in a hidden directory on the candidate's hard drive. To view, you must display hidden files and folders by editing folder options.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Freezing when entering an exam
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Check to see if there are any programs or processes running in the background, such as Windows Updates, antivirus scans, Skype, MSN Messenger, etc.
+  <br/>
+  <br/>
+  If this does not work, follow these steps to disable the network connections:
+  <br/>
+  <br/>
+  •    Click the Start button, right-click My Computer, choose Properties.
+  <br/>
+  •    Click the Hardware tab, click Device Manager, click the (+) plus sign next to the network adaptors.
+  <br/>
+  •    Right-click each listing and choose Disable.
+  <br/>
+  •    Launch Securexam(CA) again and attempt to enter the exam.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Greg Jensen
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Greg Jensen
+ </p>
+ <p>
+  gjensen@cpacanada.ca
+ </p>
+ <p>
+  cel  1 604 363 4826
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Interaction with Candidates and Evaluation Procedure
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=166">
+   Code of Conduct
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=217">
+   Timeline: What to Do and When
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=218">
+   Responding to IT Issues During an Evaluation
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=173">
+   Using Backup Laptops
+  </a>
+ </p>
+ <p>
+ </p>
+ <p>
+  If a candidate experiences a problem during the exam process, there are a few points the IT Proctor should be aware of:
+  <br/>
+  <br/>
+  <strong>
+   Time is of the essence!
+  </strong>
+  <br/>
+  <br/>
+  During the exam, time is of the essence for the candidate. If there is a technical issue, the candidate should be instructed to start hand writing immediately while you try to solve the problem. Bring paper, a bubble sheet (for MCQ input), and a form for note-taking with you when you go to help a candidate. If a problem cannot be solved quickly (rule of thumb is usually within ten minutes), then the candidate will be required to write the remainder of their exam by hand.
+  <br/>
+  <br/>
+  <strong>
+   IT Proctors are not hardware technicians
+  </strong>
+  <br/>
+  <br/>
+  Keeping the "time is of the essence" idiom in mind, IT Proctors are not expected to perform intensive diagnostics of a candidate's laptop if it fails. This is a job for the candidate's IT department.
+  <br/>
+  <br/>
+  <strong>
+   Keep calm
+  </strong>
+  <br/>
+  <br/>
+  The candidate needs to feel assured that you know what you are doing. Any uncertainty projected by you can undermine the candidate's confidence.
+  <br/>
+  <br/>
+  <strong>
+   Remember:
+  </strong>
+  The worst case scenario is that, after ten minutes, you will recover and print out the candidate's response and the candidate will write the balance of the exam by hand.  We have tracked candidates who wrote by hand and there is no correlation between writing by hand and failing.
+  <br/>
+  <br/>
+  <strong>
+   You are not alone!
+  </strong>
+  <br/>
+  <br/>
+  If you experience something not covered in the following pages or are unsure how to proceed, contact Shannon Cuthbert (scuthbert@cpawsb.ca - for PEP exams) or Chelsea Hassan (chassan@cpawsb.ca - for PREP exams) -
+  <strong>
+   immediately.
+  </strong>
+  <br/>
+  <br/>
+  <strong>
+   You are not the Presiding Officer
+  </strong>
+  <br/>
+  <br/>
+  Apart from IT help, you are not to provide any other assistance to candidates. Candidates with any non-technical questions must be directed to an invigilator or the PO.
+  <br/>
+  <br/>
+  The PO will also be responsible for recording candidate numbers for candidates who turn up unexpectedly at centres. The PO will call
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=219">
+   Eric Olsen
+  </a>
+  at the Module Services Office if they need help with this: 1-866-420-2350.
+ </p>
+ <p>
+  The PO is responsible for deciding about assigning extra time to candidates if they have technical difficulties. You may be asked for advice, but please understand that it is the PO who will make the final call.
+  <br/>
+  <br/>
+  Immediately advise the PO about any technical issues a candidate has.
+ </p>
+ <p>
+  ---
+ </p>
+ <p>
+  (SC - 7/8/2016)
+  <br/>
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Issues at Start Up
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=172">
+   Candidate's computer runs on battery only
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=174">
+   Candidate forgot his electrical cord
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=175">
+   Candidate's computer does not boot up
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=176">
+   Error message "Service Status: Stopped" or candidate is being prompted for an "Administrative Password"
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=177">
+   Error message "No License" or Candidate cannot remember his/her username (email address) to log in
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=179">
+   Candidate is being asked for a proctor password at entry
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=180">
+   The USB Drive Backup Wizard does not detect the USB key
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=181">
+   The appropriate exam is not available at the "Select an Exam" box
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=182">
+   Error message "Failed to turn security on"
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=183">
+   Remote Desktop enabled
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=184">
+   Tabtip will not close
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=185">
+   Blank Desktop or caught in a loop of starting up and shutting down
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=186">
+   Freezing when entering an exam
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=187">
+   "Unhandled exception" or "Attempted to perform and unauthorized operation" error messages
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=188">
+   When entering the software to take an exam, I DO NOT see the USB Drive Backup Wizard dialog
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=189">
+   Proctor password does not work
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=190">
+   PointSec software fails to load
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=191">
+   64-bit warning message
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=192">
+   Error message "User identification does not meet validation criteria and/or entries do not match. Unable to continue"
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=193">
+   Error message "Web Update Wizard Named Pipe Exception..."
+  </a>
+ </p>
+ <p>
+ </p>
+ <p>
+ </p>
+ <p>
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Issues at the End of the Evaluation
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=211">
+   When exiting Securexam, a pop-up says “Cannot find the file/path specified”
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=212">
+   Securexam(CPA) Does Not Exit Properly – Proctor Password Window
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=185">
+   Blank Desktop or caught in a loop of starting up and shutting down
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=213">
+   After exiting out of Securexam Windows Explorer  re-launches
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=214">
+   USB key transfer errors
+  </a>
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Issues During the Evaluation
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=194">
+   "Empty Document - Nothing Typed!" Warning pop-up
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=172">
+   Candidate's computer runs on battery only
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=195">
+   The candidate’s answer tab is blue
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=196">
+   The text in the answer tab is grey. It seems the font color has changed and cannot be changed back to black.
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=185">
+   Blank Desktop or caught in a loop of starting up and shutting down
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=197">
+   The keyboard language has changed. It is now typing in French or another language
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=198">
+   When the candidate types, for example, 4 the $ sign appears (or type 5 and the % sign appears, etc.)
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=199">
+   The Spreadsheet is frozen
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=200">
+   The spreadsheet has zoomed in or out
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=246">
+   Spreadsheet is locked
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=201">
+   Some numbers in the spreadsheet are in scientific format (e.g. 3.43E+17). Even after expanding the width of the column, the number does not change.
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=189">
+   Proctor password does not work
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=202">
+   Candidate receives an input/output error message that indicates Securexam is not saving a backup file OR Securexam stops writing to a USB key in the middle of an exam
+  </a>
+ </p>
+ <p>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=245">
+   USB Issues
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=204">
+   The candidate has to double click each Excel cell twice to enter information
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=205">
+   A circular error pop-up has appeared in the spreadsheet and there is no circular error.
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=206">
+   Computer lags during the exam – Securexam slow to respond
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=207">
+   Spell check doesn't work
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=208">
+   The computer freezes during the exam.
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=210">
+   Computer crashes during the exam and cannot be successfully restarted
+  </a>
+  <br/>
+  <br/>
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=209">
+   Student cannot access PDF Viewer occasionally
+  </a>
+ </p>
+ <p>
+  <a class="wiki_newentry" href="http://moodle.casb.com/mod/wiki/create.php?swid=9&amp;title=%3Cspan+style%3D%22color%3A+rgb%2851%2C+51%2C+51%29%3B+font-family%3A+Lato%2C+sans-serif%3B+font-size%3A+14px%3B+font-style%3A+normal%3B+font-variant-ligatures%3A+normal%3B+font-variant-caps%3A+normal%3B+font-weight%3A+normal%3B+letter-spacing%3A+normal%3B+orphans%3A+2%3B+text-align%3A+left%3B+text-indent%3A+0px%3B+text-transform%3A+none%3B+white-space%3A+normal%3B+widows%3A+2%3B+word-spacing%3A+0px%3B+-webkit-text-stroke-width%3A+0px%3B++display%3A+inline+%21important%3B+float%3A+none%3B%22%3Eno+backups+are+occurring&amp;action=new">
+   <span style="color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;float:none;">
+    no backups are occurring
+   </span>
+  </a>
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Kathleen Kort
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Greg Jensen Contact Information
+ </p>
+ <p>
+  E:
+  <a href="mailto:gjensen@cpacanada.ca">
+   gjensen@cpacanada.ca
+  </a>
+ </p>
+ <p>
+  P: 1 604 363 4826  (Note: this is a cell number, so you can text as well but please identify yourself if you do)
+ </p>
+ <p>
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Minimum System Requirements for using Securexam(CPA)
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  <strong>
+   Hardware
+  </strong>
+ </p>
+ <ul>
+  <li>
+   1 GB of Ram
+  </li>
+  <li>
+   100 MB of free hard drive space (required to run application)
+  </li>
+  <li>
+   A free USB port
+  </li>
+ </ul>
+ <p>
+  To use Securexam(CPA) in the writing centre, you need a free USB port. (You do not need a free USB port to practice with the software or to complete the mandatory “Qualification Exam”, but it is strongly recommended you always use a USB key.)
+ </p>
+ <p>
+  <strong>
+   Software
+  </strong>
+ </p>
+ <ul>
+  <li>
+   Microsoft Windows Operating System - Windows 7, Windows 8 or Windows 10
+   <br/>
+  </li>
+ </ul>
+ <p>
+  To download the software, upload the “Qualification Exam” and receive emails from Software Secure, Internet access is required.
+ </p>
+ <p>
+  <br/>
+  <strong>
+   User Rights Requirement
+  </strong>
+  <br/>
+  You must have administrator rights to install this software. User-level rights will allow you to use the software once it has been installed.
+ </p>
+ <p>
+  <strong>
+   If your employer owns your computer, you must secure employer approval and/orassistance to install Securexam(CPA), in accordance with your employer’s policies.
+  </strong>
+ </p>
+ <p>
+  ---
+ </p>
+ <p>
+  (SC - 7/8/2016)
+  <br/>
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  no backups are occurring
+ </h3>
+</div>
+<div class="text_to_html">
+ <div class="wiki-toc">
+  <p class="wiki-toc-title">
+   Table of contents
+  </p>
+  <p class="wiki-toc-section-2 wiki-toc-section">
+   1.1.
+   <a href="#toc-1">
+    No Backups are Occurring
+    <br/>
+   </a>
+  </p>
+  <p class="wiki-toc-section-2 wiki-toc-section">
+   1.2.
+   <a href="#toc-2">
+    Always
+   </a>
+  </p>
+  <p class="wiki-toc-section-2 wiki-toc-section">
+   1.3.
+   <a href="#toc-3">
+    Note:
+   </a>
+  </p>
+ </div>
+ <h4>
+  <a name="toc-1">
+  </a>
+  No Backups are Occurring
+  <br/>
+ </h4>
+ <p>
+  This may be caused by many factors and is hard to deal with.
+ </p>
+ <p>
+  Recommended Method:
+ </p>
+ <p>
+  <i>
+   (in order of speed of fix - each step may fix issue, if it does not proceed to next step)
+  </i>
+ </p>
+ <p>
+ </p>
+ <ol>
+  <li>
+   Try the
+   <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=245">
+    USB fixes
+   </a>
+  </li>
+  <li>
+   Restart (
+   <span style="color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;float:none;">
+    If the student is willing )
+   </span>
+   <ol>
+    <li>
+     exit software
+    </li>
+    <li>
+     full restart of machine
+    </li>
+    <li>
+     re-enter exam for student
+    </li>
+   </ol>
+  </li>
+  <li>
+   If the above does not fix and the student is willing:
+   <ol>
+    <li>
+     use a
+     <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=247">
+      backup laptop
+     </a>
+    </li>
+    <li>
+     or handwrite
+    </li>
+   </ol>
+  </li>
+ </ol>
+ <h4>
+  <a name="toc-2">
+  </a>
+  Always
+ </h4>
+ <p>
+ </p>
+ <ul>
+  <li>
+   use the exam recovery software at the end with an recovery key
+  </li>
+  <li>
+   zip up the my exam folder
+  </li>
+  <li>
+   send  both files on to IT Proctor Manager
+  </li>
+  <li>
+   <b>
+    Make sure to write incident report
+   </b>
+  </li>
+ </ul>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <h4>
+  <a name="toc-3">
+  </a>
+  Note:
+ </h4>
+ <p>
+  <span style="color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;float:none;">
+   SSI recommends as a first step to exit the software, do a restart of the machine, and go back into the exam.  Aside from that, this issue isn't cut-and-dried, as backups may be disrupted for any number of reasons.
+  </span>
+  <span style="color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;float:none;">
+   <b>
+    One potential culprit is an anti-virus application.
+   </b>
+  </span>
+  <span style="color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;float:none;">
+   You will need to take stock of the specific features of the candidate's set-up and make an assessment at that point as to the issue at hand - please contact your IT Proctor Manager if you need assistance!
+  </span>
+  <br/>
+ </p>
+ <p>
+  <span style="color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;float:none;">
+   other potential causes:
+  </span>
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   Skype for Business
+   <br/>
+  </li>
+  <li>
+   internal firm communication software
+  </li>
+  <li>
+   windows update
+  </li>
+ </ul>
+ <p>
+  <br/>
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Online Checklists
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  The process for online checklists for the CPA evaluations is a little different than the CASB evaluations
+ </p>
+ <p>
+  This is the process to follow for CPA Evaluation online checklists:
+  <br/>
+  <br/>
+  1.    For most evaluations you will be given access to your checklist a week prior to the evaluation date - when you are informed you have access, please check that this is indeed so. If you don't have access to an online checklist, contact Kathleen: kathleen.kort@casb.com
+  <br/>
+  <br/>
+  2.    After candidates begin writing (about 9am) physically look at the sign in sheets the PO has and compare them to your own sheet. If there is a candidate on your checklist that is not on the PO's sheet or someone on the PO's sheet that is not on your checklist, immediately contact Kathleen and inform her of the discrepancy. Don't wait - this candidate may be writing in a different centre, so we need to track them.
+ </p>
+ <p>
+  3. Mark absent students as absent as close to 9am as possible.
+ </p>
+ <p>
+  4. If any student has to handwrite, make sure to note it in your checklist.
+ </p>
+ <p>
+  5. The "upload Exam" column will indicate students that are present to write the CPA evaluation.
+ </p>
+ <p>
+  <img alt="Online Checklist" height="243" src="http://moodle.casb.com/pluginfile.php/9655/mod_wiki/attachments/9/online_checklist.JPG" width="896"/>
+ </p>
+ <p>
+  For CPA evaluations: as you will not be using Workbench to collect and decrypt the response files at the end of the evaluation and you will not be uploading the response files, that's it.  Make sure your checklist agrees with the PO's checklist as close to 9am as possible.  If there is a discrepancy, let Kathleen know ASAP.
+ </p>
+ <p>
+  <a href="https://ce.mycasb.com/IT_Proctor/Login.aspx">
+  </a>
+  <a href="https://ce.mycasb.com/IT_Proctor/Login.aspx">
+   https://ce.mycasb.com/IT_Proctor/Login.aspx
+  </a>
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  PDF patch tool
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  The PDF patch tool is available for download on the Securexam website (
+  <a href="https://cpacanada.securexam.com/login.html)">
+   https://cpacanada.securexam.com/login.html)
+  </a>
+  using the demouser account (demouser/demouser).
+ </p>
+ <p>
+  <img alt="patch tool" class="img-responsive" height="300" src="http://moodle.casb.com/pluginfile.php/9655/mod_wiki/attachments/9/er2.jpg" style="vertical-align:text-bottom;margin:0 .5em;" width="698"/>
+  <br/>
+ </p>
+ <p>
+ </p>
+ <p>
+  This tool is specifically designed to scan a user’s Securexam installation and replace any PDF documents that a user’s anti-virus software may have quarantined during installation.  This tool may be effective if a candidate reports a pop-up box that says, "PDF Not Found".
+ </p>
+ <p>
+  ------
+ </p>
+ <p>
+  (SC - 8/8/2016)
+ </p>
+ <br/>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  PointSec software fails to load
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  This issue is sometimes experienced by candidates who are with firms that require encrypted keys (e.g. E&amp;Y). The PointSec software will fail to load, the key will remain unencrypted and the candidate will be unable to write to it.
+  <br/>
+  <br/>
+  If there is another candidate nearby with the same firm (e.g. E&amp;Y), you can use that candidate's laptop to encrypt the key. Or:
+  <br/>
+  <br/>
+  •    In the system tray (bottom right corner) click on PointSec
+  <br/>
+  •    Click on EPM Client
+  <br/>
+  •    Click on Import
+  <br/>
+  <br/>
+  This should allow you to run the software and encrypt the key.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Printing TBS (Multiple choice) questions using TBS Spreadsheets
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  If a computer needs to be rebooted during the exam and the student has already responded to the task-based simulations (TBS) before the reboot, the answers given by the students in the TBS will not appear after the reboot, even though the answers are already saved to the files. To reassure students that  their answers are already saved and if they want to revisit their previous answers, you will need to print out their answer from the back up on the USB key. Detailed instructions are as follow:
+ </p>
+ <ol>
+  <li>
+   Once the computer is back in Securexam after a reboot, take the USB key from the student’s computer and print the backup file. Output of what will print is as follows:
+   <ul>
+    <li>
+     A Word and Excel document for each case written
+    </li>
+    <li>
+     A Folder called SSIOBJQ which contains .doc files (examples):
+    </li>
+   </ul>
+   <ul>
+    <li style="list-style-type:none;">
+     <ul>
+      <li>
+       CPA_2014SeptemberCore2_4000000_20140813_0204_342065529_Question #1 to # 46_q.doc (which is the file containing the responses to the multiple choice questions
+      </li>
+      <li>
+       CPA_2014SeptemberCore2_4000000_20140813_0204_342065529_
+       <strong>
+        TBS #1_q
+       </strong>
+       .doc
+      </li>
+      <li>
+       CPA_2014SeptemberCore2_4000000_20140813_0204_342065529_
+       <strong>
+        TBS #2_q
+       </strong>
+       .doc
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   Copy the results from the TBS .doc file and paste it in the first tab (input sheet) of the Excel sheet provided for the exam Question.
+  </li>
+  <li>
+   Print out the 2
+   <sup>
+    nd
+   </sup>
+   tab of the Excel spreadsheet (Summary) and give it to the student.
+  </li>
+ </ol>
+ <p>
+  Excel files will be provided in the forum topic specific to the exam date. You must know which exam the student is writing so you can use the correct Excel file(s).
+ </p>
+ <p>
+  ---
+ </p>
+ <p>
+  (SC - 7/8/2016)
+  <br/>
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Printing TBS responces using provided Spreadsheets
+ </h3>
+</div>
+<div class="text_to_html">
+ <p id="yui_3_13_0_2_1428357642467_238">
+  If a computer needs to be rebooted during the exam and the student has already responded to the task-based simulations (TBS) before the reboot, the answers given by the students in the TBS will not appear after the reboot, even though the answers are already saved to the files. To reassure students that  their answers are already saved and if they want to revisit their previous answers, you will need to print out their answer from the back up on the USB key. Detailed instructions are as follow:
+ </p>
+ <ol>
+  <li>
+   Once the computer is back in Securexam after a reboot, take the USB key from the student’s computer and print the backup file
+  </li>
+  <li>
+   Output of what will print is as follows:
+   <ul>
+    <li>
+     A Word and Excel document for each case written
+    </li>
+    <li>
+     A Folder called SSIOBJQ which contains .doc files (examples) :
+    </li>
+   </ul>
+   <ul>
+    <li>
+     <ul>
+      <li>
+       CPA_2014SeptemberCore2_4000000_20140813_0204_342065529_Question #1 to # 46_q.doc (which is the file containing the responses to the multiple choice questions
+      </li>
+      <li>
+       CPA_2014SeptemberCore2_4000000_20140813_0204_342065529_
+       <strong>
+        TBS #1_q
+       </strong>
+       .doc
+      </li>
+      <li>
+       CPA_2014SeptemberCore2_4000000_20140813_0204_342065529_
+       <strong>
+        TBS #2_q
+       </strong>
+       .doc
+      </li>
+     </ul>
+    </li>
+   </ul>
+  </li>
+  <li>
+   Copy the results from the TBS .doc file and paste it in the first tab (input sheet) of the Excel sheet provided for the exam question.
+  </li>
+  <li>
+   Print out the 2
+   <sup>
+    nd
+   </sup>
+   tab of the Excel spreadsheet (Summary) and give it to the student. This will tell him what were his answers saved in the file.
+  </li>
+ </ol>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Proctor password does not work
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  If you use the exam day proctor password and it does not work it is likely that Securexam is stuck on another exam.
+  <br/>
+  <br/>
+  Try 'password' - this is used for practice exams
+  <br/>
+  Try 'cpa' - this is used for qualification exams
+ </p>
+ <p>
+  Try 'test' - this is used for the mock exam
+ </p>
+ <p>
+  If that doesn’t work, navigate to the Documents-&gt;My Exams folder and rename the "Exams in Progress" folder to something else (e.g. Exams in Progress OLD).
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Remote Desktop enabled
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Securexam will refuse to start if it detects that Remote Desktop is enabled on the computer.
+  <br/>
+  <br/>
+  1) To disable Remote Desktop:
+  <br/>
+  <br/>
+  <strong>
+   Windows XP:
+  </strong>
+  <br/>
+  •    Right-click the My Computer icon.
+  <br/>
+  •    Select the Properties command.
+  <br/>
+  •    Select the Remote tab.
+  <br/>
+  •    Remove the checkmarks under Remote Assistance and Remote Desktop. (Some computers may not display the “Remote Desktop” check box.)
+  <br/>
+  •    Click OK.
+  <br/>
+  <br/>
+  <strong>
+   Windows Vista, Windows 7/8:
+  </strong>
+  <br/>
+  •    Right-click the Computer icon on the Start Menu.
+  <br/>
+  •    Select the Properties command.
+  <br/>
+  •    Click the Remote settings task.
+  <br/>
+  •    Click Continue if necessary.
+  <br/>
+  •    Remove the checkmark under Remote Assistance.
+  <br/>
+  •    If there is a “Remote Desktop” section, select the Don’t allow connections to this computer option.
+  <br/>
+  •    Click OK.
+  <br/>
+  <br/>
+  2) If Securexam continues to detect Remote Desktop, it will be necessary to disable the Remote Desktop services:
+  <br/>
+  <br/>
+  •    Click the Start Menu.
+  <br/>
+  •    In
+  <strong>
+   Windows XP
+  </strong>
+  , select the Run command.
+  <br/>
+  •    In
+  <strong>
+   Windows Vista
+  </strong>
+  ,
+  <strong>
+   7/8
+  </strong>
+  , type the command into the Start search field.
+  <br/>
+  •    Type the command “Services.msc” and press the Enter key.
+  <br/>
+  •    Click Continue if necessary.
+  <br/>
+  •    Right-click the Remote Access Connection Manager entry.
+  <br/>
+  •    Select the Properties command.
+  <br/>
+  •    Change Startup type to Disabled.
+  <br/>
+  •    Click OK to close the Properties window.
+  <br/>
+  •    Right-click the Terminal Services entry.
+  <br/>
+  •    Select the Properties command.
+  <br/>
+  •    Change Startup type to Disabled.
+  <br/>
+  •    Click OK to close the Properties window.
+  <br/>
+  •    Restart the computer.
+  <br/>
+  <br/>
+  At this point, if Securexam is still displaying messages about Remote Desktop, it is possible that the message is actually being caused by a problem with the laptop's power management system. The user should unplug the power cord to the laptop and try running Securexam again. Then plug the power cord back in.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Renaming an encrypted response file - updating the candidate ID
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  If you need to update a candidate ID (e.g. the candidate has used a backup computer, did not change the candidate number and the encrypted file is under the name of “demouser” or "4000000"):
+ </p>
+ <p>
+  <b>
+   Steps:
+  </b>
+  <br/>
+  1.    Open the workbench
+ </p>
+ <p>
+  2.    Click on the “Repair” tab on the top of the screen
+ </p>
+ <p>
+  3.    Click on the “Grading ID Editor” button
+ </p>
+ <p>
+  4.    Click on the “Select Files” button and browse to the location where you saved the encrypted file to be renamed
+ </p>
+ <p>
+  5.    Select the file and click on “Open”
+ </p>
+ <p>
+  6.    In the grading ID column, double click on the ID you want to change, and type the new number
+ </p>
+ <p>
+  7.    Click on “Update Grading IDs” at the bottom of the screen
+ </p>
+ <p>
+  8.    The ID will be updated.
+ </p>
+ <p>
+  9.    Browse to the folder where you saved the original file. You will see the encrypted file renamed and a folder called @@ORIGINALEXMAS@@, where the original file is stored.
+  <br/>
+ </p>
+ <p>
+  10.    Decrypt the new renamed file with the Workbench
+  <br/>
+  <br/>
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Responding to IT Issues During an Evaluation
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Depending on the particular module, candidates will be writing evaluations with different types of questions.   There are case, MCQ and objective format question types.
+  <br/>
+  <br/>
+  If a technical problem arises during the evaluation, candidates will be required to immediately start handwriting on the CPA response paper provided. The IT proctor must immediately provide the response paper, and candidates should be told to assume that they are required to complete the remainder of their case evaluation by hand. If the issue cannot be resolved within 15 minutes, candidates must be informed by the IT proctor that they will be required to complete the remainder of their evaluation by hand.  The IT proctor will be responsible for recovering the encrypted ssi-response file from the USB drive, and printing out the candidate response (see
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=58">
+   Printing a Candidate’s Files
+  </a>
+  ).  The printed output may be given to the student, and will be combined with the handwritten candidate response for the remainder of the exam.
+  <br/>
+  <br/>
+  The laptop must not be returned to the candidate until after the candidate has handed in their combined printed/handwritten response, and completed the sign-out process.
+  <br/>
+  <br/>
+  If the candidate's case response has any handwritten pages in it zip up that response file and email it to
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=203">
+   Kathleen Kort
+  </a>
+  . Put something like “collected response from candidate who finished the exam by handwriting” in the subject line or message of the email so it's handled correctly. Don't forget to include in your email the candidate's ID# and name. Also, it's a good idea to tell Kathleen that you've printed out the response and have given it to the PO who will send it to the appropriate people for processing.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Securexam(CPA) Does Not Exit Properly – Proctor Password Window
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  If an exam failed to exit properly, the Proctor Password window will appear when Securexam is launched.  If the laptop rebooted during an exam, Securexam will automatically launch and display the Proctor Password window when the laptop is restarted.
+  <br/>
+  <br/>
+  1.    Enter the proctor password + your name + the time and what happened.
+  <br/>
+  2.    To re-enter the exam, select the
+  <strong>
+   Allow access to the exam
+  </strong>
+  option
+  <br/>
+  <br/>
+  OR
+  <br/>
+  <br/>
+  3.    If the user has finished the exam, select the
+  <strong>
+   Finalize the exam
+  </strong>
+  option.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Some numbers in the spreadsheet are in scientific format (e.g. 3.43E+17). Even after expanding the width of the column, the number does not change.
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  1) Manually change the format of the cell.  Go to the Format drop-down menu, choose Cells, then click the Number tab and choose the format you want.
+  <br/>
+  <br/>
+  You should note that in the “General” format there is a limit of 10 digits, after which the format switches to scientific notation or starts to cut off the least significant decimal places.  Switching to a “Number” format corrects this problem, however the only options for the number of decimal places in the number format are “0” or “2”.  If you need to use more than two decimal places, you will have to use the General format option. If the first solution fails:
+  <br/>
+  <br/>
+  2) Try using the cells in the adjacent column to the malfunctioning column
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Spell check doesn't work
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  This is a weird quirk of Securexam caused by the candidate clicking into the header of the document. It will not affect the final exam, but please inform
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=203">
+   Kathleen Kort
+  </a>
+  so she can advise the markers if the candidate's spelling is going to be a problem.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Spreadsheet is locked
+ </h3>
+</div>
+<div class="text_to_html">
+ <div class="wiki-toc">
+  <p class="wiki-toc-title">
+   Table of contents
+  </p>
+  <p class="wiki-toc-section-3 wiki-toc-section">
+   1.1.1.
+   <a href="#toc-1">
+    Error Message: Locked spreadsheet When protection is enabled
+   </a>
+  </p>
+ </div>
+ <h3>
+  <a name="toc-1">
+  </a>
+  Error Message: Locked spreadsheet When protection is enabled
+ </h3>
+ <p>
+  candidates have a multi sheet worksheet.
+  <strong>
+   Input is accepted ONLY in the first sheet.
+  </strong>
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Student cannot access PDF Viewer occasionally
+ </h3>
+</div>
+<div class="text_to_html">
+ <div class="box generalbox">
+  <div class="no-overflow">
+   <div class="text_to_html">
+    <p>
+     The PDF Viewer (Handbook and Tax Act) are only available to open when the student is in the Answer tab.
+    </p>
+    <p>
+     Ask the student to go to the Answer tab to View-&gt;PDF Viewer.  They can now view the Handbook and Tax Act from within either the Answer or Spreadsheet tab.
+    </p>
+   </div>
+  </div>
+ </div>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Table of Contents
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  <b>
+   Note to user:
+  </b>
+  This wiki is currently being reviewed for accuracy and completeness.  Thank you for your patience as we comb through the information.
+ </p>
+ <p>
+  Shannon Cuthbert
+ </p>
+ <p>
+  (August 8, 2016)
+  <br/>
+ </p>
+ <p>
+  -----------------------------------
+ </p>
+ <p>
+  &gt;
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=240">
+   What is Securexam?
+  </a>
+ </p>
+ <p>
+  &gt;
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=242">
+   What is the latest version of Securexam?
+  </a>
+  <br/>
+ </p>
+ <p>
+  &gt;
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=161">
+   Evaluation sign-in process
+  </a>
+ </p>
+ <p>
+  &gt;
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=241">
+   Walkthrough of a successful Securexam start-up
+  </a>
+ </p>
+ <p>
+  &gt;
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=168">
+   File paths
+  </a>
+  : Where to find primary, secondary and archive files
+ </p>
+ <p>
+  &gt;
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=165">
+   Interaction with candidates and evaluation procedure
+  </a>
+ </p>
+ <p>
+  &gt;
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=167">
+   Troubleshooting guide
+  </a>
+ </p>
+ <p>
+  &gt;
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=225">
+   Printing TBS (multiple choice) questions using TBS spreadsheets
+  </a>
+ </p>
+ <p>
+  &gt;
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=215">
+   Workbench guide
+  </a>
+ </p>
+ <p>
+  &gt;
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=238">
+   ExamRecovery tool
+  </a>
+ </p>
+ <p>
+  &gt;
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=239">
+   PDF patch tool
+  </a>
+  <br/>
+ </p>
+ <p>
+  &gt;
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=178">
+   Completing the incident report
+  </a>
+ </p>
+ <p>
+  &gt;
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=243">
+   Renaming an encrypted response file - updating the candidate ID
+  </a>
+  <br/>
+  <br/>
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Tabtip will not close
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Some Windows Vista users may need to manually disable the TABTIP utility prior to running Securexam:
+  <br/>
+  <br/>
+  •    Open the Control Panel.
+  <br/>
+  •    Select the Control Panel Home option in the top left corner of the Control Panel window if it is not already selected.
+  <br/>
+  •    Click Programs.
+  <br/>
+  •    Find the Programs and Features heading and click the Turn Windows features on or off link that appears beneath it.
+  <br/>
+  •    Click Continue if necessary.
+  <br/>
+  •    Remove the checkmark from Tablet PC Optional Components.
+  <br/>
+  •    Click OK.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  The appropriate exam is not available at the "Select an Exam" box
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Exit Securexam. Exams are date driven and the computer likely has the wrong date. Click on the time in the bottom right corner of the screen. The date and time properties window will open. Set the right date, click on apply and close the window. Run Securexam.
+  <br/>
+  <br/>
+  If that is not the issue then unzip the exam files posted on the CPA IT Proctor Discussions board to
+  <strong>
+   C:\Users\USERNAME\Documents\My Exams\(student's email address)\Available\
+  </strong>
+  <br/>
+  <br/>
+  If this does not work, candidate may use a backup computer (if available).  Otherwise, the candidate must handwrite the exam.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  The candidate has to double click each Excel cell twice to enter information
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  This issue is sometimes fixed by pressing F11.
+  <br/>
+  <br/>
+  If this does not work:
+  <br/>
+  <br/>
+  •    Make sure the candidate's formulas are not open
+  <br/>
+  •    Check the candidate's mouse settings
+  <br/>
+  •    Reboot the candidate's computer. (Exit Securexam normally with the exit password. Go back into Securexam and today’s exam by selecting display all exams and then entering the proctor password to allow access to finalized exam.)
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  The candidate’s answer tab is blue
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Click on the Spreadsheet tab and then return to the Answer tab. The Answer tab should be restored.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  The computer freezes during the exam.
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Power off the computer and then reboot.
+  <br/>
+  <br/>
+  1) After the reboot, the proctor password screen will appear. INSTEAD of clicking on “Allow access to the exam”, select “Finalize the exam”:
+  <br/>
+  <br/>
+  •    Enter the proctor code
+  <br/>
+  •    Enter an explanation for the reboot
+  <br/>
+  •    SELECT: “Finalize the exam”
+  <br/>
+  •    Click OK
+  <br/>
+  <br/>
+  2) Reboot the computer and restart the software by clicking on the desktop “Securexam(CPA)” icon.
+  <br/>
+  <br/>
+  •    Choose the preferred language and click on OK
+  <br/>
+  •    Click on “Login and take an exam”
+  <br/>
+  •    Type the email address in the login screen. Click on OK
+  <br/>
+  •    Go through the USB drive backup wizard.
+  <br/>
+  •    At the “Select Exam” screen, check the “Display All Exams” box at the bottom of the dialog
+  <br/>
+  •    Select the appropriate exam and click OK.
+  <br/>
+  <br/>
+  3) The exam recovery screen will appear:
+  <br/>
+  <br/>
+  •    Enter the proctor password
+  <br/>
+  •    Click Ok
+  <br/>
+  •    The exam will restart.
+  <br/>
+  <br/>
+  If power off does not work, take the electrical cord out and drop the battery. Re-plug the computer and reinsert the battery in the computer. Reboot. Repeat the 3 steps described above.
+  <br/>
+  <br/>
+  If the computer does not return to the candidate’s response then the candidate may use a backup computer (if available) or must handwrite the exam. The candidate’s work on the USB key will need to be printed out
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  The keyboard language has changed. It is now typing in French or another language
+ </h3>
+</div>
+<div class="text_to_html">
+ <div class="box generalbox">
+  <div class="no-overflow">
+   <div class="text_to_html">
+    <p>
+     There are keyboard shortcuts that candidates might inadvertently hit that will change the language of their keyboard.
+     <br/>
+     <br/>
+     Switch the keyboard language by pressing Left Alt+Shift, or Ctrl+shift, or click with the mouse on the little “FR” or “EN” that appears on the right side of the taskbar at the bottom of the screen.
+     <br/>
+     <br/>
+     Some laptops have a different shortcut.  If that does not work:
+    </p>
+    <p>
+     •    Exit out normally of Securexam
+     <br/>
+     •    Go to control panel and select clock, language and region then select region and language, choose the keyboard and languages tab, then select change keyboard – remove the multi language keyboard.
+     <br/>
+     •    Go back into Securexam and today’s exam by selecting display all exams and then entering the proctor password to allow access to finalized exam.
+     <br/>
+     <br/>
+     We advise candidates to remove all keyboard languages except for the one they plan to write with to avoid this issue.
+    </p>
+    <p>
+     <br/>
+    </p>
+    <p>
+     Known shortcuts:
+    </p>
+    <p>
+    </p>
+    <ol>
+     <li>
+      (Left Alt + shift)        this is the windows standard default
+      <br/>
+     </li>
+     <li>
+      <span style="color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;float:none;">
+       (ctrl+shift)
+      </span>
+      <br/>
+     </li>
+     <li>
+      windows key + space  (windows 10)
+     </li>
+    </ol>
+    <p>
+     <br/>
+    </p>
+   </div>
+  </div>
+ </div>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  The spreadsheet has zoomed in or out
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Hold down the CONTROL key and use the mouse scroll wheel at the same time. This will cause the spreadsheet to grow/ shrink.
+ </p>
+ <div class="editor-indent" style="margin-left:30px;">
+  <p>
+   If they
+   <i>
+    do not have a mouse
+   </i>
+   this will work with the far right hand side of the touch pad +ctrl. To do this swipe up the right hand side while holding the control button.
+  </p>
+  <p>
+   <b>
+    It is recommend to have an extra wired mouse on hand with the scroll wheel to do this
+   </b>
+   as the touch pad solution is difficult to use.
+  </p>
+ </div>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <br/>
+ </p>
+ <p>
+  <b>
+   Keyboard shortcuts - these may work as it is an excel function but secureexam sometimes blocks depending on edition.
+  </b>
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   ALT+W J should zoom to 100%
+  </li>
+  <li>
+   ALT+W Q allows selecting zoom level
+  </li>
+ </ul>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  The Spreadsheet is frozen
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Press the "Escape" key. Close the drop-down menu. There is likely an “Invalid Formula” message hidden by the drop-down menu and it will seem that the spreadsheet is frozen.   You can also try clicking ALT-TAB to cycle through open windows to bring the error message to the front.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  The text in the answer tab is grey. It seems the font color has changed and cannot be changed back to black.
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  This happens when the answer tab header is clicked on. It changes all the text to the same font and color of the header. It is not possible to change it back. Do not worry, when printing the encrypted file, the text will be printed as Times New Roman 12 points black.
+  <br/>
+  <br/>
+  If the candidate wishes you can exit Securexam normally and then log back into Securexam and today’s exam by selecting ‘’display all exams’’ and then entering the proctor password to allow access to finalized exam. This will restore the font colour to black.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  The USB Drive Backup Wizard does not detect the USB key
+ </h3>
+</div>
+<div class="text_to_html">
+ <div class="wiki-toc">
+  <p class="wiki-toc-title">
+   Table of contents
+  </p>
+  <p class="wiki-toc-section-2 wiki-toc-section">
+   1.1.
+   <a href="#toc-1">
+    At Wizard Error:
+   </a>
+  </p>
+  <p class="wiki-toc-section-3 wiki-toc-section">
+   1.1.1.
+   <a href="#toc-2">
+    Most issues at this stage
+   </a>
+  </p>
+  <p class="wiki-toc-section-2 wiki-toc-section">
+   1.2.
+   <a href="#toc-3">
+    <span style="font-weight:normal;">
+     During the Exam:
+    </span>
+   </a>
+  </p>
+ </div>
+ <p>
+ </p>
+ <h4>
+  <a name="toc-1">
+  </a>
+  At Wizard Error:
+ </h4>
+ <br/>
+ •    Check that the USB key is properly inserted into the USB port and retry.
+ <br/>
+ •    Change the USB key and retry.
+ <br/>
+ •    Insert the USB key in a different USB port and retry.
+ <br/>
+ •    Follow the "Laptop Instructions for Students" instructions for using the manually configure button.
+ <br/>
+ •    Reboot the computer  - Firm laptops are most commonly effected
+ <p>
+  If this does not work, candidate may use a backup computer (if available) or can choose to complete the evaluation without a USB backup.
+  <strong>
+  </strong>
+ </p>
+ <p>
+  if the candidate so chooses to proceed without a USB Key, CPA requires that they sign a USB Waiver. This can be provided by the presiding officer or can be found on the main CPA Proctor page.
+ </p>
+ <p>
+ </p>
+ <h5>
+  <a name="toc-2">
+  </a>
+  Most issues at this stage
+ </h5>
+ <p>
+  Are caused by encryption issues.  Using a bigger usb key may help.
+ </p>
+ <br/>
+ <p>
+  <br/>
+ </p>
+ <h4>
+  <a name="toc-3">
+  </a>
+  <span style="font-weight:normal;">
+   During the Exam:
+  </span>
+ </h4>
+ <p>
+  a usb write error may occur during the exam
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   Check that the USB key is properly inserted into the USB port and retry.
+  </li>
+  <li>
+   Insert the USB key in a different USB port and retry.
+  </li>
+  <li>
+   Change the USB key and retry.
+  </li>
+ </ul>
+ <p>
+  if the
+  <b>
+   key in encrypted
+  </b>
+  , you may have to exit the exam  - at this point ask the student if they wish to continue without the backup, spend the time to explain that they have no external backup but they do have the choice to have another key attempted or a backup laptop to use. This second option will take time.
+ </p>
+ <p>
+ </p>
+ <ul>
+  <li>
+   if Yes, waiver form
+  </li>
+  <li>
+   if  No, then hand them paper and tell them to keep working, bring the laptop to the desk, exit the exam and create a new usb key with the encryption on it. Reenter the exam and bring it back to the student.
+  </li>
+ </ul>
+ <p>
+  If this happens a second time, either sing the CPA waiver or they many use a backup laptop.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Timeline: What to Do and When
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  <span style="text-decoration:underline;">
+   Before an Evaluation
+  </span>
+  <br/>
+  <br/>
+  <span style="text-decoration:underline;">
+   One week (or more) prior:
+  </span>
+  <br/>
+  <br/>
+  •    Review the CPA IT Proctor Guide: spend 10-15 minutes re-familiarizing yourself with procedures.
+  <br/>
+  •    Ensure your Workbench is the correct version (version number will be posted on the CPA IT Proctor Communication website’s home page).  Run a test with the files posted on the Discussion forum to confirm it’s working properly.
+  <br/>
+  •    Ensure you have access to your online checklist.
+  <br/>
+  •    Ensure you know how to get to your evaluation location and what time you need to arrive.
+  <br/>
+  •    Ensure you have any internet login information required for your evaluation location.
+  <br/>
+  <br/>
+  <span style="text-decoration:underline;">
+   The Evening prior:
+  </span>
+  <br/>
+  <br/>
+  •    Don’t forget to plug in your cell phone so you have a full charge for evaluation day.
+  <br/>
+  •    Login to the CPA IT Proctor Communication website to check the discussion board for:
+  <br/>
+  •    Securexam passwords, exam files, exam bar colours
+  <br/>
+  •    Last minute instructions
+  <br/>
+  <br/>
+  <span style="text-decoration:underline;">
+   Morning of the Evaluation:
+  </span>
+  <br/>
+  <br/>
+  •    Check the Discussions forum for any last minute instruction
+  <br/>
+  •    Cell phone and charger?
+  <br/>
+  •    Laptop loaded with Workbench?
+  <br/>
+  •    Printer with lots of ink/toner?
+  <br/>
+  •    Laptops instructions for Candidates?
+  <br/>
+  •    Exam passwords, colours, files?
+  <br/>
+  •    Student checklist?
+  <br/>
+  •    Internet login information?
+  <br/>
+  •    Printed copies of the IT Recovery Log (posted on the Discussions forum)?
+  <br/>
+  <br/>
+  <span style="text-decoration:underline;">
+   On Evaluation Day
+  </span>
+  <br/>
+  <br/>
+  Evaluations will start at 9 AM local and will run for 3 or 4 hours. IT Proctors are expected to arrive in the appropriate room at the evaluation centre at 8 AM.
+  <br/>
+  <br/>
+  Get to the exam centre on time!  That means being in the room and ready to work at 8 AM.
+  <br/>
+  <br/>
+  Setup your printer and print a test page from Workbench to ensure it's ready in case you need it.
+  <br/>
+  <br/>
+  Check the Discussions forum for last minute instructions.
+  <br/>
+  <br/>
+  For CFE, CPA provides backup laptops - set one up so it's ready in case you need it.
+  <br/>
+  <br/>
+  Turn your cell phone to vibrate rather than ring.
+  <br/>
+  <br/>
+  Copy exam files (posted on the Discussions forum) onto a USB key.  Keep that key plus a couple of blank keys with you in case you need them.
+  <br/>
+  <br/>
+  About 20 minutes before the start of the exam, the PO will read out the Laptop Instructions for Students (found on the Discussions forum). The instructions must be read out – if the PO is not doing this please intervene. While the PO is reading out the instructions circulate around the room.  It is preferable to get candidates to the point after the entry password is given and before they enter “start” at least 10 minutes before the scheduled start of the exam so you have some time to deal with any problems.
+  <br/>
+  <br/>
+  At the scheduled exam start time, the PO will ask candidates to enter “start”.
+  <br/>
+  <br/>
+  Candidates should check that the colour of the exam title bar is correct (the day before the exam, this colour will be posted on the CPA IT Proctor Communication website along with the entry, exit, and proctor password).
+  <br/>
+  <br/>
+  Candidates must be asked to check that they have the correct number and type of questions.
+  <br/>
+  <br/>
+  Once candidates are writing, follow the instructions found in the
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=129">
+   Online Checklists
+  </a>
+  section.
+  <br/>
+  <br/>
+  During the exam you may be needed to help candidates deal with occasional laptop issues. Please follow the processes outlined in
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=42">
+   IT Issue during the MCQ Portion
+  </a>
+  ,
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=43">
+   IT Issue during the CASE Portion
+  </a>
+  and
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=53">
+   Using Backup Laptops
+  </a>
+  .
+  <br/>
+  <br/>
+  Don't forget to document any incidents to the Incident Report form.  If you are in doubt of whether or not to enter something in please err on the side of entering in something not needed rather than not entering something.
+  <br/>
+  <br/>
+  There is no break between Objective Format and Case questions, so candidates can decide how to spend the time (though CPA will provide recommendations):
+  <br/>
+  <br/>
+ </p>
+ <p>
+  At the end of the exam, BEFORE giving candidates the exit password, the PO must ask them to check that all of their spreadsheet responses are contained within columns A–N (see Laptop Instructions for Students posted on the Discussions forum).
+  <br/>
+  <br/>
+  <span style="text-decoration:underline;">
+   After Candidates have Finished Writing
+  </span>
+  <br/>
+  <br/>
+  Candidates will hand in their USB keys to the invigilators (by Module and student number in larger centres).  Once the PO has confirmed that all USB keys have been accounted for s/he will pass them on to you.
+  <br/>
+  <br/>
+  •    Count the number of keys you have received and confirm it is the correct number (the same number as on your checklist).
+  <br/>
+  •    Give your keys to the head IT Proctor who will hold onto the USB keys until s/he is instructed to send them back using the prepaid envelope.
+ </p>
+ <p>
+  <span>
+   After the Evaluation
+  </span>
+  <br/>
+  <br/>
+  Keep your cell phone on for 24 hours after the evaluation – we may need to contact you for questions about your upload and/or checklist
+  <br/>
+  <br/>
+  If you are the only IT Proctor from your evaluation location or if you're the head IT Proctor: you will be instructed when to send your USB keys back using your prepaid envelope, mail in the USB keys to CPA.
+ </p>
+ <p>
+  NOTE: CPA will not be processing invoices or payments so please don't send your invoice back with your USB keys.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Troubleshooting Guide
+ </h3>
+</div>
+<div class="text_to_html">
+ <div class="box generalbox">
+  <div class="no-overflow">
+   <div class="text_to_html">
+    <p>
+     <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=168">
+      File Paths
+     </a>
+    </p>
+    <p>
+     <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=169">
+      Issues at Start Up
+     </a>
+    </p>
+    <p>
+     <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=170">
+      Issues During the Evaluation
+     </a>
+    </p>
+    <p>
+     <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=171">
+      Issues at the End of the Evaluation
+     </a>
+    </p>
+    <p>
+     <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=247">
+      Backup Laptop Usage
+     </a>
+    </p>
+   </div>
+  </div>
+ </div>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  USB Issues
+ </h3>
+</div>
+<div class="text_to_html">
+ <div class="wiki-toc">
+  <p class="wiki-toc-title">
+   Table of contents
+  </p>
+  <p class="wiki-toc-section-2 wiki-toc-section">
+   1.1.
+   <a href="#toc-1">
+    During the Exam:
+   </a>
+  </p>
+  <p class="wiki-toc-section-2 wiki-toc-section">
+   1.2.
+   <a href="#toc-2">
+    Encrypted
+   </a>
+  </p>
+  <p class="wiki-toc-section-2 wiki-toc-section">
+   1.3.
+   <a href="#toc-3">
+    <b>
+     NOTE:
+    </b>
+   </a>
+  </p>
+ </div>
+ <p>
+ </p>
+ <h4 style="margin:10px 0px;font-family:Lato, sans-serif;font-weight:bold;line-height:20px;color:rgb(51,51,51);font-size:20px;font-style:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">
+  <br/>
+ </h4>
+ <h4>
+  <a name="toc-1">
+  </a>
+  During the Exam:
+ </h4>
+ <p style="margin:0px 0px 10px;color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">
+  a usb write error may occur during the exam . This will trigger a proctor required screen.
+ </p>
+ <p style="margin:0px 0px 10px;color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">
+  in order do the following: (each step may fix issue)
+ </p>
+ <p style="margin:0px 0px 10px;color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">
+ </p>
+ <ul style="padding:0px;margin:0px 0px 10px 25px;color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">
+  <li style="line-height:20px;">
+   Check that the USB key is properly inserted into the USB port and retry.
+  </li>
+  <li style="line-height:20px;">
+   Insert the USB key in a different USB port and retry.
+  </li>
+  <li style="line-height:20px;">
+   Change the USB key and retry. (see encrypted note further down for details related to this.)
+  </li>
+  <li style="line-height:20px;">
+   If it still not working then ask if they wish to "handwrite / go to a
+   <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=247">
+    back up
+   </a>
+   "  or sign a waiver
+  </li>
+  <li style="line-height:20px;">
+   if waiver then make sure to use a recovery key at the end and use the exam recovery software to put said files on usb
+  </li>
+ </ul>
+ <h4>
+  <a name="toc-2">
+  </a>
+  Encrypted
+ </h4>
+ <h5 style="margin:0px 0px 10px;color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">
+  if the
+  <b>
+   key in encrypted
+  </b>
+  , you may have to exit the exam  - at this point ask the student if they wish to continue without the backup, spend the time to explain that they have no external backup but they do have the choice to have another key attempted or a
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=247">
+   backup laptop to use
+  </a>
+  . This second option will take time.
+ </h5>
+ <p style="margin:0px 0px 10px;color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">
+ </p>
+ <ul style="padding:0px;margin:0px 0px 10px 25px;color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">
+  <li style="line-height:20px;">
+   if Yes, waiver form and then use a recovery key at the end .
+  </li>
+  <li style="line-height:20px;">
+   if  No, then hand them paper and tell them to keep working, bring the laptop to the desk, exit the exam and create a new usb key with the encryption on it. Reenter the exam and bring it back to the student.
+  </li>
+ </ul>
+ <p style="margin:0px 0px 10px;color:rgb(51,51,51);font-family:Lato, sans-serif;font-size:14px;font-style:normal;font-weight:normal;letter-spacing:normal;text-align:left;text-indent:0px;text-transform:none;white-space:normal;word-spacing:0px;">
+  If the problems still keep occurring they have the option of a
+  <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=247">
+   backup
+  </a>
+  or a hand write.
+ </p>
+ <h4>
+  <a name="toc-3">
+  </a>
+  <b>
+   NOTE:
+  </b>
+ </h4>
+ <p>
+  as per any major issue (aka - if it is more than just a port change on the key Create an incident report! )
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  USB key Errors
+ </h3>
+</div>
+<div class="text_to_html">
+ <br/>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  USB key transfer errors
+ </h3>
+</div>
+<div class="text_to_html">
+ <div class="box generalbox">
+  <div class="no-overflow">
+   <div class="text_to_html">
+    <p>
+     In some cases the exam will fail to write to the USB key.
+    </p>
+    <p class="Default">
+     The exam file can be copied manually to a USB key. The name of the file is: Examname_candidateID_date_time.ssi-response
+    </p>
+    <p class="Retraitcorpsdetexte">
+     Remove the candidate’s USB key and insert a new USB key.
+    </p>
+    <p class="Retraitcorpsdetexte">
+     Wait until the computer recognizes the recovery USB key and wait until you see the message “your new hardware is installed and is ready for use”.
+    </p>
+    <p class="Default">
+     Check for the exam file in the following locations in order:
+    </p>
+    <ol>
+     <li>
+      On the Desktop.
+     </li>
+     <li>
+      If not on the Desktop, navigate to:
+     </li>
+    </ol>
+    <p>
+     <strong>
+      Windows XP:
+     </strong>
+    </p>
+    <p>
+     C: \ Documents and Settings \
+     <em>
+      user name
+     </em>
+     \ My Documents \ My Exams \
+     <em>
+      email address
+     </em>
+     \ Completed
+    </p>
+    <p>
+     <strong>
+      Windows Vista, Windows 7/8:
+     </strong>
+    </p>
+    <p>
+     C: \ Users \
+     <em>
+      user name
+     </em>
+     \ Documents \ My Exams \
+     <em>
+      email address
+     </em>
+     \ Completed
+    </p>
+   </div>
+  </div>
+ </div>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Using Backup Laptops
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  Backup laptops are provided by CPA for CFE only. Candidates can supply their own backup laptop at any exam, provided that the correct version of Securexam(CPA) is installed and tested on it.
+  <br/>
+  <br/>
+  <span style="text-decoration:underline;">
+   For the laptops that CPA supplies during CFE
+  </span>
+  <br/>
+  <br/>
+  •    Set up a supplied backup laptop on the morning of each evaluation day
+  <br/>
+  •    Boot up the laptop and get it ready in case it’s needed. There should be instructions on each of the provided backup laptops regarding log in – to the laptop and to Securexam.
+  <br/>
+  •    Normally the Securexam username will be kort@casb.com or kathleen.kort@casb.com password: backup.  You can tell what the username is by by going to Documents-&gt;My Exams and seeing the folder name in the "My Exams" folder.
+  <br/>
+  •    The candidate will use his/her CPA candidate number for exam identification (see Discussion board posting PDF "Laptop instructions for students" in the "Enter your exam identification" section).
+  <br/>
+  <br/>
+  <span style="text-decoration:underline;">
+   If a candidate's laptop fails at the beginning of an exam:
+  </span>
+  <br/>
+  <br/>
+  •    Provide the backup laptop and handle the response as usual.
+  <br/>
+  •    Note the entity number of the backup laptop, and the name and candidate number of the candidate.
+  <br/>
+  •    Enter the information into the incident report site.
+  <br/>
+  <br/>
+  <span style="text-decoration:underline;">
+   If a candidate's laptop fails during an exam:
+  </span>
+  <br/>
+  <br/>
+  •    Provide the backup laptop with a new USB key.
+  <br/>
+  •    Print the candidate's response collected from the original USB key.
+  <br/>
+  •    Give the candidate the printed response as soon as possible.
+  <br/>
+  •    At the end of the exam, email in both .ssi-response files to Kathleen with the explanation "Candidate wrote on two laptops so has two response files"
+  <br/>
+  •    Note the entity number of the backup laptop, and the name and candidate number of the candidate. Enter the information into the incident report site.
+  <br/>
+  <br/>
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Walkthrough of a successful Securexam start-up
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+ </p>
+ <div class="box generalbox">
+  <div class="no-overflow">
+   <div class="text_to_html">
+    <div class="box generalbox">
+     <div class="no-overflow">
+      <div class="text_to_html">
+       <p>
+        <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=160">
+         Minimum System Requirements for using Securexam
+        </a>
+       </p>
+       <p>
+        The "Laptop Instructions for Students" PDF posted on the Discussions board will walk candidates through Securexam start up and exit step-by-step.  The Presiding Officer (PO) will read out these instructions to candidates while you circulate in the room to address possible issues.  Please ensure candidates are waiting to follow along with the PO's instructions rather than getting ahead of them.  They may think that they know what they're doing, but evaluations require slightly different procedures than practice, so ask them to wait and follow along.
+        <br/>
+       </p>
+       <p>
+        <b>
+         Areas to note:
+        </b>
+        <br/>
+        <br/>
+        1.    Candidates who disable Skype, IM, remote desktop and WiFi are less likely to run into problems during an evaluation.
+        <br/>
+        <br/>
+        2.    Candidates must type in at least one letter into the Answer tab to stop the 15 minute warning from popping up.  Having text in the Spreadsheet tab alone will not stop the warning from occurring (for more information on this issue, please see:
+        <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=194">
+         Empty Document - Nothing Typed!" Warning pop-up
+        </a>
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+ <br/>
+ <p>
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  What is Securexam?
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+ </p>
+ <div class="box generalbox">
+  <div class="no-overflow">
+   <div class="text_to_html">
+    <p>
+     Securexam is “lockdown” software that allows candidates to use their laptops in an environment that prohibits access to certain functions, files, and the Internet to ensure all candidates are working from a level playing field.
+     <br/>
+     <br/>
+     In order for candidates to use their laptops for any CPA evaluation, they must have previously installed Securexam(CPA), run a qualification exam, and had their laptop approved by Securexam. This process assists in finding and solving any laptop glitches prior to an exam.
+     <br/>
+     <br/>
+     Securexam does not support Macintosh computers – even if "Boot Camp" is installed. Candidates are not allowed to use Macs to write the exams.  Securexam also does not support tablets - this includes Surface machines if the keyboard is detachable.
+     <br/>
+     <br/>
+     <strong>
+     </strong>
+     <a href="http://moodle.casb.com/mod/wiki/view.php?pageid=160">
+      Minimum System Requirements for using Securexam
+     </a>
+     (for students)
+     <br/>
+     <br/>
+     <strong>
+      Minimum system requirements for IT Proctors:
+     </strong>
+     <br/>
+     <br/>
+     Hardware
+    </p>
+    <ul>
+     <li>
+      Laptop
+     </li>
+     <li style="text-align:left;">
+      512 MB of RAM
+     </li>
+     <li style="text-align:left;">
+      100 MB free hard drive space
+     </li>
+     <li style="text-align:left;">
+      Two free USB ports
+     </li>
+     <li>
+      Portable
+      <br/>
+      printer with extra ink/toner cartridge: there must be at least one
+      <br/>
+      printer at each evaluation location – do not assume someone else is
+      <br/>
+      bringing one.
+     </li>
+     <li>
+      Cell phone (capable of being set to vibrate)
+     </li>
+    </ul>
+    <p>
+     Software
+    </p>
+    <ul>
+     <li>
+      Windows 7, 8 or 10 (Securexam Workbench supports 64 bit OS)
+     </li>
+     <li>
+      Microsoft Office - Word and Excel
+     </li>
+     <li>
+      Securexam Workbench (installed and tested)
+     </li>
+    </ul>
+    <p>
+     ---
+    </p>
+    <p>
+     (SC - 7/8/2016)
+    </p>
+   </div>
+  </div>
+ </div>
+ <br/>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  What is the latest version of Securexam?
+ </h3>
+</div>
+<div class="text_to_html">
+ <b>
+  Securexam 8.2.4 is the current version.
+  <br/>
+  SE 8.2.4 is compatible with Workbench 3.4.0.
+  <br/>
+  <br/>
+ </b>
+ (SC - 9/19/2016)
+ <br/>
+ <br/>
+ <b>
+  <b>
+   -----------------
+  </b>
+  <br/>
+  Updates for previous version 8.2.3
+  <br/>
+  <br/>
+ </b>
+ Patch notes are as follows:
+ <br/>
+ <br/>
+ SSIRunTimeServices Check added - The SSIRunTimeServices Check will run when the software launches, and if the service is disabled the user will see the following message:
+ <br/>
+ <br/>
+ <img alt="SSI" class="img-responsive" height="259" src="http://moodle.casb.com/pluginfile.php/9655/mod_wiki/attachments/9/SSI.jpg" style="vertical-align:text-bottom;margin:0 .5em;" width="594"/>
+ <br/>
+ We believe that this will be a helpful addition for the candidates.
+ <b>
+  <br/>
+ </b>
+ <br/>
+ The version of Workbench released with SE 8.2.3 is Workbench 3.4.0.
+ <b>
+  <br/>
+  <br/>
+ </b>
+ (Note: Exams written in either Securexam Version 8.2.1 or 8.2.3. can be decrypted by either Workbench Version 3.3.0 or Version 3.4.0.)
+ <b>
+  <br/>
+  -----------------
+  <br/>
+  Updates for 8.2.2
+ </b>
+ <br/>
+ <br/>
+ Patch notes are as follows:
+ <br/>
+ <br/>
+ 1.    Removed Clipboard Watcher routines – suspicion that these routines may have corrupted memory when doing cut/paste operations.
+ <br/>
+ 2.    During finalization phase – test internal Exam In Progress variable for illegal path characters – if detected, skip code that copies the Server log files over for the final response creation.  If the path has illegal characters, this will cause the software to crash with a finalization error and NOT create the final response file.
+ <br/>
+ 3.    Added additional finalization logging to the ssi_err.log file.
+ <br/>
+ 4.    Updated the Exam Recovery program to look for and copy the ssi_err.log if found (unfortunately copying dump files require admin privileges).
+ <br/>
+ 5.    Updated the Exam Recovery program to look for and copy the SSI_Support.txt log file if found on user’s desktop.
+ <br/>
+ 6.    Wrapped a few routines with code to provide a stacktrace to the logs on any exception.
+ <br/>
+ 7.    Software will *always* check for updates if connected to Internet (not required to go to Exam and Licenses) so as to mitigate future correspondence issues.
+ <br/>
+ 8.    Updated SES version number to v8.2.2
+ <br/>
+ <br/>
+ The version of Workbench that is compatible with SE 8.2.2 is Workbench 3.3.0.
+ <br/>
+ <br/>
+ -----------------
+ <br/>
+ <br/>
+ <b>
+  Updates for 8.2.0
+ </b>
+ <br/>
+ <br/>
+ <ol>
+  <li>
+   The MCQ Component has been updated – in some rare instances, the MCQs were not saving on a user’s system.   From a user’s perspective, all that has changed is that they now have to click on a “Start” button when they first open up the MCQ section.
+  </li>
+  <li>
+   On the Spreadsheet component, the “Show Printable Area” option has been removed.
+  </li>
+  <li>
+   The “Practice/Generic” button has been removed – Practice exams are now available through the regular exam list and now more closely resemble an actual exam in terms of procedures.
+  </li>
+  <li>
+   Added a “Securexam Version Checker” icon to the desktop – this utility will now show the user exactly which version they are using.
+  </li>
+  <li>
+   Improved support for non- “My Documents” exam locations.
+  </li>
+  <li>
+   There were also additional minor fixes to the secondary naming conventions,  finalizing exam procedures and updating backup routines that we expect to prevent issues in the future.
+  </li>
+ </ol>
+ <br/>
+ The version of Workbench that is compatible with SE 8.2.0 is Workbench 3.3.0.
+ <br/>
+ <br/>
+ ---
+ <br/>
+ <br/>
+ (SC - 8/26/2016)
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  When entering the software to take an exam, I DO NOT see the USB Drive Backup Wizard dialog
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  One of the following two things can be done:
+  <br/>
+  <br/>
+  1) Exit out of the software, navigate to “My Documents &gt; My Exams &gt; {user name} “Exam In Progress” folder and delete the “DeviceInfo.txt” file. Restart the software, the USB Wizard dialog will again appear.
+  <br/>
+  <br/>
+  OR
+  <br/>
+  <br/>
+  2) Exit out of the software, navigate to “My Documents &gt; My Exams &gt; {user name} folder. In the {user name} folder, rename the “Exam In Progress” folder to “Exam In Progress_old”. Restart the software, the USB Wizard dialog will again appear.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  When exiting Securexam, a pop-up says “Cannot find the file/path specified”
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  When exiting Securexam, a pop-up says "Cannot find the file/path specified. (Usually when the candidate receives the "Cannot find the file/path specified", it is because of a bad USB key, or the key has come loose from the USB port.)
+  <br/>
+  <br/>
+  •    Click OK on the pop-up "Cannot find the file/path specified".
+  <br/>
+  •    A pop-up will appear that says "Your files have been successfully saved in C:\Documents and Settings\...\Desktop\".  Click OK.
+  <br/>
+  •    Recover the candidate’s files from the Desktop.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  When the candidate types, for example, 4 the $ sign appears (or type 5 and the % sign appears, etc.)
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  The candidate has activated the StickyKeys feature by pressing the Shift key five times. To turn off StickyKeys, press the Shift key five times.
+ </p>
+</div><hr><div class="wiki_headingtitle">
+ <h3>
+  Workbench Guide
+ </h3>
+</div>
+<div class="text_to_html">
+ <p>
+  The only time you'll need to use Workbench is when a candidate's laptop fails during the evaluation and s/he has a partial response that needs to be printed off so s/he can continue writing on either a backup laptop or by hand.
+ </p>
+ <div class="box generalbox">
+  <div class="no-overflow">
+   <div class="text_to_html">
+    <p>
+     The Workbench printer will print to your default printer.
+    </p>
+    <p>
+     <span style="text-decoration:underline;">
+      Setting the Print Options
+     </span>
+     <br/>
+     <br/>
+     This step is only required once. After the options are selected, they will be saved and will apply to all future print jobs.
+     <br/>
+     <br/>
+     Click the "Exam Printer" tab and then the "Print" button to open up the main application window.
+     <br/>
+     <br/>
+     To review the printer options, click the double arrow located on the left side of Securexam Workbench as illustrated below:
+    </p>
+    <p>
+     <img alt="double arrows" class="img-responsive" height="315" src="http://moodle.casb.com/pluginfile.php/9655/mod_wiki/attachments/9/p1.jpg" style="vertical-align:text-bottom;margin:0 .5em;" width="337"/>
+     <br/>
+    </p>
+    <p>
+     The exam printing pane on the left side will open and will allow you to choose all your required printing options.
+     <br/>
+     <br/>
+     <span style="text-decoration:underline;">
+      Directory Print Options
+     </span>
+     <br/>
+     <br/>
+     For Directory Print Options, you can decide to pick either all files in a folder or individual files.
+     <br/>
+     <br/>
+     By default, the print option has been set to "SelectFromFolder".  This option allows you to print all files in a folder.
+     <br/>
+     <br/>
+     To print individual files, choose "SelectFromFileBrowser".
+    </p>
+    <p>
+     Once you have set your printing options, click the double arrow on the left side of the page to close the Exam Printing screen.
+     <br/>
+     <br/>
+     <span style="text-decoration:underline;">
+      Selection Options
+     </span>
+     <br/>
+     <br/>
+     There are a number of printing options specified in the top bar of the print screen.
+     <br/>
+     <br/>
+    </p>
+    <table border="1">
+     <tbody>
+      <tr>
+       <td>
+        <strong>
+         Selection Option
+        </strong>
+       </td>
+       <td>
+        <strong>
+         Description
+        </strong>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Search Subfolders
+        </strong>
+       </td>
+       <td>
+        If checked, the print utility will search the selected folder and all its sub-folders for exam files to display.
+        <br/>
+        Otherwise, only files from the selected folder are displayed.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Auto Print Selected Files
+        </strong>
+       </td>
+       <td>
+        If checked, exam files are printed as they are found and validated.
+        <br/>
+        Otherwise, the files are first displayed in a grid and the user has to click the Print button to start printing.
+        <br/>
+        <br/>
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Show Previously Printed Folder Documents
+        </strong>
+       </td>
+       <td>
+        If checked, the Select Folder option will display exams that were previously printed with the Select Folder option.
+        <br/>
+        By default, exams are moved to a special folder after printing and are not displayed.
+       </td>
+      </tr>
+      <tr>
+       <td>
+        <strong>
+         Show Previously Printed Database Documents
+        </strong>
+       </td>
+       <td>
+        If selected, the Print From Database option will display previously printed exams from the database.
+        <br/>
+        By default, printed exams saved in the database are not displayed.
+       </td>
+      </tr>
+     </tbody>
+    </table>
+    <p>
+     <br/>
+     Normally, you will only have the “Search Subfolders” button checked.
+     <br/>
+     <br/>
+     Workbench will load the exams to be printed.
+     <br/>
+    </p>
+    <p>
+     During this process the Workbench will validate each file and display its current status when completed.
+     <br/>
+    </p>
+    <p>
+     Wait until the “Print Status” column shows “Ready” beside the file(s) you want to print.
+     <br/>
+    </p>
+    <p>
+     Check the box(es) beside the file(s) you wish to print and click the "Print" button (bottom right).
+    </p>
+    <p>
+     ---
+    </p>
+    <p>
+     (SC - 7/8/2016)
+     <br/>
+    </p>
+   </div>
+  </div>
+ </div>
+</div>
+        </body>
+        </html>
+        

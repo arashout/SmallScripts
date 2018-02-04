@@ -1,0 +1,9 @@
+# EXECUTABLES
+*.bat
+
+# Data
+*.txt
+*.csv
+
+# PDF
+*.fdf

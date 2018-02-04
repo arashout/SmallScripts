@@ -1,0 +1,19 @@
+{
+    "Vancouver" : "City One",
+    "Burnaby" : "City Two",
+    "Delta" : "City Three",
+    "BC" : "UP",
+    "British Columbia" : "Unknown Province",
+    "Arash Outadi" : "First Last",
+    "arashout" : "firstlast",
+    "arash.out" : "first.last",
+    "778" : "123",
+    "987" : "456",
+    "8654" : "7890",
+    "Canadian Logistics" : "Logistics Company",
+    "Andritz" : "Manufactoring Company",
+    "Software Resume" : "Anon Resume",
+    "Strength Journal" : "Workout Logger",
+    "Dispatch" : "FakeThing",
+    "Ubyssey" : "School Newspaper"
+}
