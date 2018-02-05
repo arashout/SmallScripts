@@ -6,6 +6,7 @@ from googleapiclient.discovery import build
 
 # TODO: Maybe don't hard-code in the future
 
+MAX_COUNT = 3
 
 def yieldSearchTerms() -> List[str]:
     universities = [
@@ -41,17 +42,17 @@ def yieldSearchTerms() -> List[str]:
         "Universite de Sherbrooke PhD clinical intervention with children and adolescents",
         "McMaster PhD Psychology, Neuroscience & Behaviour"
     ]
-    suffix_term = "( 'fund*' OR 'gurantee*' )"
     for uni in universities:
-        search_query = "'{0}' AND {1}".format(uni, suffix_term)
+        search_query = "'{0}' '{1}' '{2}'".format(uni, 'fund*', 'guarantee*')
         yield search_query
 
 
 def main():
-    developer_key = os.environ.get('CUSTOM_SEARCH_DEVELOPER_KEY')
+    developer_key = os.environ.get('CUSTOM_SEARCH_API_KEY')
     search_engine_id = os.environ.get('CUSTOM_SEARCH_SEARCH_ENGINE_ID')
     if developer_key is None or search_engine_id is None:
         print('Missing credentials')
+        exit()
 
     service = build('customsearch', 'v1',developerKey=developer_key)
 
@@ -62,9 +63,12 @@ def main():
         ).execute()
 
         items = res['items']
-        for item in items:
-            print('{0},{1}'.format(item['link'] , item['title']))
-        break
+
+        for i, item in enumerate(items):
+            print('{0},{1},{2}\n'.format(query, item['link'] , item['title']))
+            
+            if i < MAX_COUNT:
+                break
 
 
 if __name__ == '__main__':
