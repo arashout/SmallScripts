@@ -2,7 +2,7 @@ from typing import List
 import os
 import pprint
 
-from googleapiclient.discovery import build
+from google import google
 
 # TODO: Maybe don't hard-code in the future
 
@@ -54,20 +54,15 @@ def main():
         print('Missing credentials')
         exit()
 
-    service = build('customsearch', 'v1',developerKey=developer_key)
-
     for query in yieldSearchTerms():
-        res = service.cse().list(
-            q=query,
-            cx=search_engine_id,
-        ).execute()
+        results = google.search(query)
 
-        items = res['items']
-
-        for i, item in enumerate(items):
-            print('{0},{1},{2}\n'.format(query, item['link'] , item['title']))
+        for i, result in enumerate(results):
+            title = result.name.replace('\n', ' ')
+            description = result.description.replace('\n', ' ')
+            print(' "{0}" ,{1},"{2}","{3}"'.format(query, result.google_link , title, description))
             
-            if i < MAX_COUNT:
+            if i > MAX_COUNT:
                 break
 
 
